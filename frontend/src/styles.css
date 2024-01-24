@@ -1,0 +1,828 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+#main #carouselTlou .carousel-inner .carousel-item .d-block {
+  height: 100vh;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .navbar-brand .img-fluid {
+  height: 300px;
+  max-width: 250px;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar #btnBar {
+  display: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4em;
+  color: azure;
+  background: transparent;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse {
+  margin-right: 15px;
+  justify-content: end;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav {
+  margin-right: 10px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav #btnSubscribe {
+  padding: 6px;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -4px;
+  border-radius: 5px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+  text-shadow: 1px 0px 3px black;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .moreInfo {
+  top: 85%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .moreInfo #btnInfo {
+  padding: 6px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -4px;
+  border-radius: 5px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+  text-shadow: 1px 0px 3px black;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .moreInfo #btnInfo:hover {
+  color: black;
+  background-color: azure;
+  text-shadow: 1px 0px 0px black;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .footer {
+  top: 98%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .footer .copy {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  text-shadow: 1px 0px 3px black;
+}
+#main #carouselTlou .carousel-indicators {
+  margin: 55px auto;
+}
+#main #showLigth {
+  height: 530px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0px 0px 40px 0px;
+  border: 2px solid azure;
+  background-color: black;
+}
+#main #showLigth .offcanvas-header .btn-close {
+  position: relative;
+  left: 90%;
+  border: none;
+  color: azure;
+  background-color: azure;
+}
+#main #showLigth .offcanvas-body .img-fluid {
+  height: 570px;
+  margin: -180px auto;
+}
+#main #showLigth .offcanvas-body .navbar-nav {
+  margin-top: 20px;
+  line-height: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#main #showLigth .offcanvas-body .navbar-nav .nav-item .dropdown-toggle, #main #showLigth .offcanvas-body .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#main #showLigth .offcanvas-body .navbar-nav .nav-item #univers {
+  height: 100px;
+}
+#main #showLigth .offcanvas-body .navbar-nav .nav-item #univers .dropdown-item {
+  overflow: auto;
+  max-width: 300px;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#main #showLigth .offcanvas-body .navbar-nav .nav-item #media {
+  height: 100px;
+}
+#main #showLigth .offcanvas-body .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 300px;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#main #showLigth .offcanvas-body .navbar-nav #btnSubscribe {
+  display: block;
+  padding: 6px;
+  max-width: 180px;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 7px auto;
+  margin-right: 55px;
+  border-radius: 5px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+  text-shadow: 1px 0px 3px black;
+}
+
+#suscribe {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/pict/main/theLastOfUsLuciol.jpg");
+}
+#suscribe #btnCloseSuscribe {
+  border: none;
+  font-size: 1.8em;
+  color: azure;
+  background: transparent;
+}
+#suscribe .containSuscribe {
+  top: 45%;
+  left: 50%;
+  max-width: 1200px;
+  text-align: center;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+#suscribe .containSuscribe .suscribe {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: azure;
+}
+#suscribe .containSuscribe .info {
+  font-size: 1.6em;
+  color: azure;
+}
+#suscribe .containSuscribe form .row {
+  margin: 40px auto;
+  max-width: 600px;
+}
+#suscribe .containSuscribe form .row .col-lg-8 #adress {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: azure;
+  background: azure;
+}
+#suscribe .containSuscribe form .row .col-lg-4 #btnSuscribe {
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 3px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+}
+#suscribe .containSuscribe form .row .col-lg-4 #btnSuscribe:hover {
+  color: black;
+  background: azure;
+}
+
+#tlou .show {
+  height: 940px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#tlou .show .navbar {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#tlou .show .navbar .navbar-brand .img-fluid {
+  height: 300px;
+  max-width: 250px;
+}
+#tlou .show .navbar #btnBar {
+  display: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4em;
+  color: azure;
+  background: transparent;
+}
+#tlou .show .navbar .collapse {
+  margin-right: 15px;
+  justify-content: end;
+}
+#tlou .show .navbar .collapse .navbar-nav {
+  margin-right: 10px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+#tlou .show .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#tlou .show .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#tlou .show .navbar .collapse .navbar-nav #btnSuscribe {
+  padding: 6px;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -4px;
+  border-radius: 5px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+  text-shadow: 1px 0px 3px black;
+}
+#tlou .show .logo {
+  max-width: 600px;
+  top: 0%;
+  left: 60%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#tlou .show .logo .img-fluid {
+  height: 300px;
+  max-width: 640px;
+}
+#tlou .show .logo #btnBuy {
+  margin: -22px auto;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  max-width: 100px;
+  font-size: 1.2em;
+  color: azure;
+  border-radius: 3px;
+  background: transparent;
+  border: 1px solid azure;
+}
+#tlou .show .pitch {
+  margin: 150px auto;
+  width: 100%;
+  display: block;
+  max-width: 1200px;
+}
+#tlou .show .pitch .sentence {
+  text-align: center;
+  font-size: 1.4em;
+  color: azure;
+  text-shadow: 1px 0px 3px black;
+}
+#tlou .experience {
+  height: 425px;
+  padding: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#tlou .experience .livePlayer {
+  margin: 10px auto;
+  text-align: center;
+  color: azure;
+  text-shadow: 1px 0px 3px black;
+}
+#tlou .experience .row {
+  padding: 10px;
+  margin: 6px auto;
+}
+#tlou .experience .row .col-lg-4 .img-fluid {
+  height: 285px;
+  max-width: 550px;
+  border: none;
+  border-radius: 5px;
+}
+#tlou .experience .row .col-lg-4 .slogan {
+  margin: 6px auto;
+  text-align: center;
+}
+#tlou .experience .row .col-lg-4 .slogan .sentenceLive {
+  font-size: 1.2em;
+  color: azure;
+}
+#tlou .media {
+  height: 880px;
+  padding: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#tlou .media .carousel .carousel-indicators {
+  bottom: -25%;
+  left: 5%;
+  position: absolute;
+}
+#tlou .media .carousel .carousel-indicators .row {
+  margin: auto;
+  text-align: center;
+}
+#tlou .media .carousel .carousel-indicators .row .col-lg-2 {
+  max-width: 600px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+#tlou .media .carousel .carousel-indicators .row .col-lg-2 .img-fluid {
+  height: 100px;
+}
+#tlou .media .carousel .carousel-inner {
+  margin: 60px auto;
+}
+#tlou .media .carousel .carousel-inner .carousel-item {
+  text-align: center;
+}
+#tlou .media .carousel .carousel-inner .carousel-item .img-fluid {
+  height: 600px;
+  max-width: 1080px;
+}
+#tlou .media .carousel .carousel-inner .carousel-item video {
+  height: 600px;
+  max-width: 1200px;
+}
+#tlou .media .footer {
+  margin: 160px auto;
+}
+#tlou .media .footer .copy {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  text-shadow: 1px 0px 3px black;
+}
+#tlou #showLigth {
+  height: 530px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0px 0px 40px 0px;
+  border: 2px solid azure;
+  background-color: black;
+}
+#tlou #showLigth .offcanvas-header .btn-close {
+  position: relative;
+  left: 90%;
+  border: none;
+  color: azure;
+  background-color: azure;
+}
+#tlou #showLigth .offcanvas-body .img-fluid {
+  height: 570px;
+  margin: -180px auto;
+}
+#tlou #showLigth .offcanvas-body .navbar-nav {
+  margin-top: 20px;
+  line-height: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#tlou #showLigth .offcanvas-body .navbar-nav .nav-item .dropdown-toggle, #tlou #showLigth .offcanvas-body .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#tlou #showLigth .offcanvas-body .navbar-nav .nav-item #univers {
+  height: 100px;
+}
+#tlou #showLigth .offcanvas-body .navbar-nav .nav-item #univers .dropdown-item {
+  overflow: auto;
+  max-width: 300px;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#tlou #showLigth .offcanvas-body .navbar-nav .nav-item #media {
+  height: 100px;
+}
+#tlou #showLigth .offcanvas-body .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 300px;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#tlou #showLigth .offcanvas-body .navbar-nav #btnSubscribe {
+  display: block;
+  padding: 6px;
+  max-width: 180px;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 7px auto;
+  margin-right: 55px;
+  border-radius: 5px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+  text-shadow: 1px 0px 3px black;
+}
+
+@media screen and (max-width: 1024px) {
+  #main #carouselTlou .carousel-inner .carousel-item .d-block {
+    max-width: 100%;
+  }
+  #tlou .show .logo {
+    max-width: 600px;
+    top: 0%;
+    left: 45%;
+  }
+  #tlou .media {
+    height: 860px;
+  }
+  #tlou .media .carousel {
+    margin: -10px auto;
+  }
+  #tlou .media .carousel .carousel-indicators {
+    left: -9%;
+    width: 1000px;
+  }
+  #tlou .media .carousel .carousel-inner .carousel-item .img-fluid {
+    max-width: 950px;
+  }
+  #tlou .media .carousel .carousel-inner .carousel-item video {
+    max-width: 950px;
+  }
+}
+@media screen and (max-width: 970px) {
+  #main #carouselTlou .carousel-inner .carousel-item .d-block {
+    max-width: 100%;
+  }
+  #main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar {
+    justify-content: space-between;
+  }
+  #main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar #btnBar {
+    right: 2%;
+    display: block;
+    position: absolute;
+  }
+  #main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav {
+    display: none;
+  }
+  #tlou .show .navbar {
+    justify-content: space-between;
+  }
+  #tlou .show .navbar #btnBar {
+    right: 2%;
+    display: block;
+    position: absolute;
+  }
+  #tlou .show .navbar .collapse .navbar-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #main #carouselTlou .carousel-inner .carousel-item .d-block {
+    width: 100%;
+  }
+  #suscribe .containSuscribe {
+    top: 48%;
+    max-width: 600px;
+  }
+  #suscribe .containSuscribe .suscribe {
+    font-size: 1.7em;
+  }
+  #suscribe .containSuscribe form {
+    margin: -14px auto;
+  }
+  #suscribe .containSuscribe form .row .col-lg-8 .form-control {
+    margin: auto;
+    max-width: 60%;
+  }
+  #suscribe .containSuscribe form .row .col-lg-4 #btnSuscribe {
+    margin: 20px auto;
+  }
+  #tlou .show .navbar #btnBar {
+    margin-right: 15px;
+  }
+  #tlou .show .logo {
+    max-width: 600px;
+    top: 10%;
+    left: 13%;
+  }
+  #tlou .show .pitch {
+    max-width: 650px;
+  }
+  #tlou .show .pitch .sentence {
+    margin: -10px auto;
+    font-size: 1.2em;
+  }
+  #tlou .experience .row {
+    height: 340px;
+    overflow: auto;
+    text-align: center;
+  }
+  #tlou .media {
+    height: 1260px;
+  }
+  #tlou .media .carousel {
+    margin: -10px auto;
+  }
+  #tlou .media .carousel .carousel-indicators {
+    left: 5%;
+    width: 450px;
+    bottom: -88%;
+    margin: auto;
+  }
+  #tlou .media .carousel .carousel-indicators .row {
+    margin: auto;
+    height: 500px;
+    overflow: auto;
+  }
+  #tlou .media .carousel .carousel-indicators .row .col-lg-2 .img-fluid {
+    height: 200px;
+  }
+  #tlou .media .carousel .carousel-inner .carousel-item .img-fluid {
+    max-width: 950px;
+  }
+  #tlou .media .carousel .carousel-inner .carousel-item video {
+    margin-top: -80px;
+    margin-bottom: -20px;
+    height: 680px;
+    max-width: 750px;
+  }
+  #tlou .media .footer {
+    margin: 560px auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  #main #carouselTlou .carousel-inner .carousel-item .d-block {
+    max-width: 100%;
+  }
+  #tlou .show .logo {
+    max-width: 400px;
+    top: -20%;
+    left: 3%;
+    height: 120px;
+  }
+  #tlou .show .pitch {
+    top: 22%;
+    position: relative;
+  }
+  #tlou .show .pitch .sentence {
+    margin: auto;
+    height: 120px;
+    overflow: auto;
+    font-size: 1.2em;
+    max-width: 360px;
+  }
+  #tlou .experience {
+    height: 410px;
+  }
+  #tlou .experience .livePlayer {
+    font-size: 1.5em;
+  }
+  #tlou .experience .row {
+    height: 330px;
+    overflow: auto;
+    text-align: center;
+  }
+  #tlou .media {
+    height: 860px;
+  }
+  #tlou .media .carousel {
+    margin: -10px auto;
+  }
+  #tlou .media .carousel .carousel-indicators {
+    left: 5%;
+    width: 350px;
+    bottom: -86%;
+    margin: auto;
+  }
+  #tlou .media .carousel .carousel-indicators .row {
+    margin: auto;
+    height: 300px;
+    overflow: auto;
+  }
+  #tlou .media .carousel .carousel-indicators .row .col-lg-2 .img-fluid {
+    height: 200px;
+  }
+  #tlou .media .carousel .carousel-inner .carousel-item .img-fluid {
+    height: 370px;
+    max-width: 360px;
+  }
+  #tlou .media .carousel .carousel-inner .carousel-item video {
+    margin-top: -120px;
+    margin-bottom: -20px;
+    height: 500px;
+    max-width: 350px;
+  }
+  #tlou .media .footer {
+    margin: 380px auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  #main #carouselTlou .carousel-inner .carousel-item .d-block {
+    max-width: 100%;
+  }
+  #main #carouselTlou .carousel-inner .carousel-item .containTlou .footer {
+    left: 18%;
+  }
+  #tlou .show .logo {
+    max-width: 400px;
+    top: -20%;
+    left: 3%;
+    height: 120px;
+  }
+  #tlou .show .pitch {
+    top: 22%;
+    position: relative;
+  }
+  #tlou .show .pitch .sentence {
+    margin: auto;
+    height: 120px;
+    overflow: auto;
+    font-size: 1.2em;
+    max-width: 360px;
+  }
+  #tlou .experience {
+    height: 420px;
+  }
+  #tlou .experience .livePlayer {
+    font-size: 1.5em;
+  }
+  #tlou .experience .row {
+    height: 330px;
+    overflow: auto;
+    text-align: center;
+  }
+  #tlou .media {
+    height: 860px;
+  }
+  #tlou .media .carousel {
+    margin: -10px auto;
+  }
+  #tlou .media .carousel .carousel-indicators {
+    left: 5%;
+    width: 350px;
+    bottom: -98%;
+    margin: auto;
+  }
+  #tlou .media .carousel .carousel-indicators .row {
+    margin: auto;
+    height: 300px;
+    overflow: auto;
+  }
+  #tlou .media .carousel .carousel-indicators .row .col-lg-2 .img-fluid {
+    height: 200px;
+  }
+  #tlou .media .carousel .carousel-inner .carousel-item .img-fluid {
+    height: 340px;
+    max-width: 320px;
+  }
+  #tlou .media .carousel .carousel-inner .carousel-item video {
+    margin-top: -120px;
+    margin-bottom: -20px;
+    height: 500px;
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #main #carouselTlou .carousel-inner .carousel-item .d-block {
+    max-width: 100%;
+  }
+  #tlou .show .navbar #btnBar {
+    margin-right: 7px;
+  }
+  #tlou .show .logo {
+    max-width: 400px;
+    top: -20%;
+    left: 3%;
+    height: 120px;
+  }
+  #tlou .show .pitch {
+    top: 22%;
+    position: relative;
+  }
+  #tlou .show .pitch .sentence {
+    margin: auto;
+    height: 120px;
+    overflow: auto;
+    font-size: 1.2em;
+    max-width: 360px;
+  }
+  #tlou .experience {
+    height: 420px;
+  }
+  #tlou .experience .livePlayer {
+    font-size: 1.5em;
+  }
+  #tlou .experience .row {
+    height: 330px;
+    overflow: auto;
+    text-align: center;
+  }
+  #tlou .media {
+    height: 860px;
+  }
+  #tlou .media .carousel {
+    margin: -10px auto;
+  }
+  #tlou .media .carousel .carousel-indicators {
+    left: 0%;
+    width: 260px;
+    bottom: -98%;
+    margin: auto;
+  }
+  #tlou .media .carousel .carousel-indicators .row {
+    margin: auto;
+    height: 300px;
+    overflow: auto;
+  }
+  #tlou .media .carousel .carousel-indicators .row .col-lg-2 .img-fluid {
+    height: 200px;
+  }
+  #tlou .media .carousel .carousel-inner .carousel-item .img-fluid {
+    height: 340px;
+    max-width: 320px;
+  }
+  #tlou .media .carousel .carousel-inner .carousel-item video {
+    margin-top: -120px;
+    margin-bottom: -20px;
+    height: 500px;
+    max-width: 350px;
+  }
+}/*# sourceMappingURL=styles.css.map */

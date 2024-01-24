@@ -1,0 +1,173 @@
+<section id="tlou" *ngIf="tlouDetails">
+    <div class="show" [ngStyle]="{'background-image': 'url(' + (isSmallScreen ? tlouDetails.portable : tlouDetails.wallpaper) + ')'}" *ngIf="isSmallScreen">
+        <div class="navbar navbar-expand">
+            <div class="navbar-brand">
+                <img src="/assets/pict/main/theLastOfUsLogo.png" [routerLink]="'/main'" class="img-fluid w-100" alt="tlouLogo" />
+            </div>
+            <button type="button" id="btnBar" data-bs-toggle="offcanvas" data-bs-target="#showCanvas"><i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#univers">UNIVERS</a>
+                    <div class="dropdown-menu" id="univers">
+                        <a href="#" class="dropdown-item">FACTIONS</a>
+                        <a href="#" class="dropdown-item">INFECTES</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">PERSONNAGES</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#goodies">GOODIES</a>
+                    <div class="dropdown-menu" id="goodies">
+                        <a href="#" class="dropdown-item">FIGURINES</a>
+                        <a href="#" class="dropdown-item">VETEMENTS</a>
+                        <a href="#" class="dropdown-item">ACCESSOIRES</a>
+                    </div>
+                </li>
+                <button type="button" id="btnSuscribe" [routerLink]="'/suscribe'">ABONNEMENT</button>
+                </ul>
+            </div>
+        </div>
+        <div class="logo">
+            <img [src]="tlouDetails.logo" class="img-fluid w-100" alt="tlouLogo" />
+            <button type="button" id="btnBuy">ACHETER</button>
+        </div>
+        <div class="pitch">
+            <div class="sentence">{{tlouDetails.pitch}}</div>
+        </div>
+    </div>
+    <div class="show" [ngStyle]="{'background-image': 'url(' + tlouDetails.wallpaper + ')'}" *ngIf="!isSmallScreen">
+        <div class="navbar navbar-expand">
+            <div class="navbar-brand">
+                <img src="/assets/pict/main/theLastOfUsLogo.png" [routerLink]="'/main'" class="img-fluid w-100" alt="tlouLogo" />
+            </div>
+            <button id="btnBar" type="button" data-bs-toggle="offcanvas" data-bs-target="#showLigth" aria-controls="showLigth"><i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#univers">UNIVERS</a>
+                    <div class="dropdown-menu" id="univers">
+                        <a href="#" class="dropdown-item">FACTIONS</a>
+                        <a href="#" class="dropdown-item">INFECTES</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">PERSONNAGES</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#goodies">GOODIES</a>
+                    <div class="dropdown-menu" id="goodies">
+                        <a href="#" class="dropdown-item">FIGURINES</a>
+                        <a href="#" class="dropdown-item">VETEMENTS</a>
+                        <a href="#" class="dropdown-item">ACCESSOIRES</a>
+                    </div>
+                </li>
+                <button type="button" id="btnSuscribe" [routerLink]="'/suscribe'">ABONNEMENT</button>
+                </ul>
+            </div>
+        </div>
+        <div class="logo">
+            <img [src]="tlouDetails.logo" class="img-fluid w-100" alt="tlouLogo" />
+            <button type="button" id="btnBuy">ACHETER</button>
+        </div>
+        <div class="pitch">
+            <div class="sentence">{{tlouDetails.pitch}}</div>
+        </div>
+    </div>
+    <div class="experience" [style.backgroundImage]="'url(' + tlouDetails.screenshots + ')'">
+        <h2 class="livePlayer">Ce que vous allez vivre dans le jeu :</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <img [src]="tlouDetails.pictLiveOne" class="img-fluid w-100" alt="pictFirst" />
+                <div class="slogan">
+                    <p class="sentenceLive">{{tlouDetails.sentenceLiveOne}}</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img [src]="tlouDetails.pictLiveTwo" class="img-fluid w-100" alt="pictSecond" />
+                <div class="slogan">
+                    <p class="sentenceLive">{{tlouDetails.sentenceLiveTwo}}</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img [src]="tlouDetails.pictLiveThree" class="img-fluid w-100" alt="pictThird" />
+                <div class="slogan">
+                    <p class="sentenceLive">{{tlouDetails.sentenceLiveThree}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="media" [style.backgroundImage]="'url(' + tlouDetails.menu + ')'">
+        <div class="carousel slide" id="carouselDemo" data-bs-wrap="true" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <img [src]="tlouDetails.firstMedia" class="img-fluid w-100 active" alt="Slide 0" data-bs-target="#carouselDemo" data-bs-slide-to="0">
+                    </div>
+                    <div class="col-lg-2">
+                        <img [src]="tlouDetails.secondMedia" class="img-fluid w-100" alt="Slide 1" data-bs-target="#carouselDemo" data-bs-slide-to="1">
+                    </div>
+                    <div class="col-lg-2">
+                        <img [src]="tlouDetails.thirdMedia" class="img-fluid w-100" alt="Slide 2" data-bs-target="#carouselDemo" data-bs-slide-to="2">
+                    </div>
+                    <div class="col-lg-2">
+                        <img [src]="tlouDetails.fourMedia" class="img-fluid w-100" alt="Slide 3" data-bs-target="#carouselDemo" data-bs-slide-to="3">
+                    </div>
+                    <div class="col-lg-2">
+                        <img [src]="tlouDetails.fiveMedia" class="img-fluid w-100" alt="Slide 4" data-bs-target="#carouselDemo" data-bs-slide-to="4">
+                    </div>
+                    <div class="col-lg-2">
+                        <img [src]="tlouDetails.sixMedia" class="img-fluid w-100" alt="Slide 5" data-bs-target="#carouselDemo" data-bs-slide-to="5">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="60000">
+                    <img [src]="tlouDetails.firstMedia" class="img-fluid w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="60000">
+                    <img [src]="tlouDetails.secondMedia" class="img-fluid w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="60000">
+                    <img [src]="tlouDetails.thirdMedia" class="img-fluid w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="60000">
+                    <img [src]="tlouDetails.fourMedia" class="img-fluid w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="60000">
+                    <img [src]="tlouDetails.fiveMedia" class="img-fluid w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="60000">
+                    <img [src]="tlouDetails.sixMedia" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="copy">© The Last Of Us 2024</p>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="showLigth" aria-labelledby="showLigth">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <img src="/assets/pict/main/theLastOfUsLogo.png" [routerLink]="'/main'" class="img-fluid w-100" alt="tlouLogo" />
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#univers">UNIVERS</a>
+                    <div class="dropdown-menu" id="univers">
+                        <a href="#" class="dropdown-item">FACTIONS</a>
+                        <a href="#" class="dropdown-item">INFECTES</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">PERSONNAGES</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#media">MEDIA</a>
+                    <div class="dropdown-menu" id="media">
+                        <a href="#" class="dropdown-item" [routerLink]="'/serieTv'">SERIE TV</a>
+                        <a href="#" class="dropdown-item" [routerLink]="'/americanDreams'">AMERICAN DREAMS</a>
+                    </div>
+                </li>
+                <button type="button" id="btnSubscribe" [routerLink]="'/subscribe'">ABONNEMENT</button>
+            </ul>
+        </div>
+    </div>
+</section>

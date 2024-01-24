@@ -1,0 +1,1002 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    display: block;
+}
+
+// MIXIN & ROOT 
+$firstColor: azure;
+$secondColor: black;
+
+@mixin flex ($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+}
+
+// MAIN
+#main {
+    #carouselTlou {
+        .carousel-inner {
+            .carousel-item {
+                .d-block {
+                    height: 100vh;
+                }
+                .containTlou {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    .navbar {
+                        position: absolute;
+                        top: -10%;
+                        left: 0;
+                        width: 100%;
+                        position: relative;
+                        @include flex (row);
+                        .navbar-brand {
+                            .img-fluid {
+                                height: 300px;
+                                max-width: 250px;
+                            }
+                        }
+                        #btnBar {
+                            display: none;
+                            border: none;
+                            cursor: pointer;
+                            font-size: 1.4em;
+                            color: $firstColor;
+                            background: transparent;
+                        }
+                        .collapse {
+                            margin-right: 15px;
+                            justify-content: end;
+                            .navbar-nav {
+                                margin-right: 10px;
+                                column-gap: 80px;
+                                .nav-item {
+                                    .nav-link {
+                                        font-size: 1.4em;
+                                        font-weight: bold;
+                                        margin-top: -7px;
+                                        color: $firstColor;
+                                        text-decoration: none;
+                                        text-shadow: 1px 0px 3px $secondColor;
+                                    }
+                                    .dropdown-toggle {
+                                        font-size: 1.4em;
+                                        font-weight: bold;
+                                        color: $firstColor;
+                                        text-decoration: none;
+                                        text-shadow: 1px 0px 3px $secondColor;
+                                    }
+                                }
+                                #btnSubscribe {
+                                    padding: 6px;
+                                    font-size: 1.4em;
+                                    font-weight: bold;
+                                    cursor: pointer;
+                                    margin-top: -4px;
+                                    border-radius: 5px;
+                                    color: $firstColor;
+                                    background: transparent;
+                                    border: 1px solid $firstColor;
+                                    text-shadow: 1px 0px 3px $secondColor;
+                                }
+                            }
+                        }
+                    }
+                    .moreInfo {
+                        top: 85%;
+                        left: 50%;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        #btnInfo {
+                            padding: 6px;
+                            font-size: 1.1em;
+                            font-weight: bold;
+                            cursor: pointer;
+                            margin-top: -4px;
+                            border-radius: 5px;
+                            color: $firstColor;
+                            background: transparent;
+                            border: 1px solid $firstColor;
+                            text-shadow: 1px 0px 3px $secondColor;
+                            &:hover {
+                                color: $secondColor;
+                                background-color: $firstColor;
+                                text-shadow: 1px 0px 0px $secondColor;
+                            }
+                        }
+                    }
+                    .footer {
+                        top: 98%;
+                        left: 50%;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                        height: 100px; 
+                        .copy {
+                            text-align: center;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            color: $firstColor;
+                            text-shadow: 1px 0px 3px $secondColor;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-indicators {
+            margin: 55px auto;
+        }
+    }
+    #showLigth {
+        height: 530px;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 0px 0px 40px 0px;
+        border: 2px solid $firstColor;
+        background-color: $secondColor;
+        .offcanvas-header {
+            .btn-close {
+                position: relative;
+                left: 90%;
+                border: none;
+                color: $firstColor;
+                background-color: $firstColor;
+            }
+        }
+        .offcanvas-body {
+            .img-fluid {
+                height: 570px;
+                margin: -180px auto;
+            }
+            .navbar-nav {
+                margin-top: 20px;
+                line-height: 40px;
+                text-align: center;
+                @include flex (column);
+                .nav-item {
+                    .dropdown-toggle, .nav-link {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        margin-top: -7px;
+                        color: $firstColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                    #univers {
+                        height: 100px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 300px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
+                    }
+                    #media {
+                        height: 100px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 300px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
+                    }
+                }
+                #btnSubscribe {
+                    display: block;
+                    padding: 6px;
+                    max-width: 180px;
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin: 7px auto;
+                    margin-right: 55px;
+                    border-radius: 5px;
+                    color: $firstColor;
+                    background: transparent;
+                    border: 1px solid $firstColor;
+                    text-shadow: 1px 0px 3px $secondColor;
+                }
+            }
+        }
+    }
+}
+
+// SUBSCRIBE
+#suscribe {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/pict/main/theLastOfUsLuciol.jpg');
+    #btnCloseSuscribe {
+        border: none;
+        font-size: 1.8em;
+        color: $firstColor;
+        background: transparent;
+    }
+    .containSuscribe {
+        top: 45%;
+        left: 50%;
+        max-width: 1200px;
+        text-align: center;
+        position: relative;
+        transform: translate(-50%, -50%);
+        .suscribe {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: $firstColor;
+        }
+        .info {
+            font-size: 1.6em;
+            color: $firstColor;
+        }
+        form {
+            .row {
+                margin: 40px auto;
+                max-width: 600px;
+                .col-lg-8 {
+                    #adress {
+                        width: 100%;
+                        border: none;
+                        border-radius: 5px;
+                        color: $firstColor;
+                        background: $firstColor;
+                    }
+                }
+                .col-lg-4 {
+                    #btnSuscribe {
+                        cursor: pointer;
+                        font-size: 1.2em;
+                        border-radius: 3px;
+                        color: $firstColor;
+                        background: transparent;
+                        border: 1px solid $firstColor;
+                        &:hover {
+                            color: $secondColor;
+                            background: $firstColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// TLOU
+#tlou {
+    .show {
+        height: 940px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .navbar {
+            position: absolute;
+            top: -10%;
+            left: 0;
+            width: 100%;
+            position: relative;
+            @include flex (row);
+            .navbar-brand {
+                .img-fluid {
+                    height: 300px;
+                    max-width: 250px;
+                }
+            }
+            #btnBar {
+                display: none;
+                border: none;
+                cursor: pointer;
+                font-size: 1.4em;
+                color: $firstColor;
+                background: transparent;
+            }
+            .collapse {
+                margin-right: 15px;
+                justify-content: end;
+                .navbar-nav {
+                    margin-right: 10px;
+                    column-gap: 80px;
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        margin-top: -7px;
+                        color: $firstColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                    .dropdown-toggle {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        color: $firstColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                }
+                #btnSuscribe {
+                    padding: 6px;
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-top: -4px;
+                    border-radius: 5px;
+                    color: $firstColor;
+                    background: transparent;
+                    border: 1px solid $firstColor;
+                    text-shadow: 1px 0px 3px $secondColor;
+                }
+                }
+            }
+        }
+        .logo {
+            max-width: 600px;
+            top: 0%;
+            left: 60%;
+            position: relative;
+            @include flex (column);            
+            .img-fluid {
+                height: 300px;
+                max-width: 640px;
+            }
+            #btnBuy {
+                margin: -22px auto;
+                display: block;
+                width: 100%;
+                cursor: pointer;
+                max-width: 100px;
+                font-size: 1.2em;
+                color: $firstColor;
+                border-radius: 3px;
+                background: transparent;
+                border: 1px solid $firstColor;
+            }
+        }
+        .pitch {
+            margin: 150px auto;
+            width: 100%;
+            display: block;
+            max-width: 1200px;
+            .sentence {
+                text-align: center;
+                font-size: 1.4em;
+                color: $firstColor;
+                text-shadow: 1px 0px 3px $secondColor;
+            }
+        }
+    }
+    .experience {
+        height: 425px;
+        padding: 5px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .livePlayer {
+            margin: 10px auto;
+            text-align: center;
+            color: $firstColor;
+            text-shadow: 1px 0px 3px $secondColor;
+        }
+        .row {
+            padding: 10px;
+            margin: 6px auto;
+            .col-lg-4 {
+                .img-fluid {
+                    height: 285px;
+                    max-width: 550px;
+                    border: none;
+                    border-radius: 5px;
+                }
+                .slogan {
+                    margin: 6px auto;
+                    text-align: center;
+                    .sentenceLive {
+                        font-size: 1.2em;
+                        color: $firstColor;
+                    }
+                }
+            }
+        }
+    }
+    .media {
+        height: 880px;
+        padding: 5px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        .carousel {
+            .carousel-indicators {
+                bottom: -25%;
+                left: 5%;
+                position: absolute;
+                .row {
+                    margin: auto;
+                    text-align: center;
+                    .col-lg-2 {
+                        max-width: 600px;
+                        margin-left: -10px;
+                        margin-right: -10px;
+                        .img-fluid {
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+            .carousel-inner {
+                margin: 60px auto;
+                .carousel-item {
+                    text-align: center;
+                    .img-fluid {
+                        height: 600px;
+                        max-width: 1080px;
+                    }
+                    video {
+                        height: 600px;
+                        max-width: 1200px;
+                    }
+                }
+            }
+        }
+        .footer {
+            margin: 160px auto;
+            .copy {
+                text-align: center;
+                font-size: 1.4em;
+                font-weight: bold;
+                color: $firstColor;
+                text-shadow: 1px 0px 3px $secondColor;
+            }
+        }
+    }
+    #showLigth {
+        height: 530px;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 0px 0px 40px 0px;
+        border: 2px solid $firstColor;
+        background-color: $secondColor;
+        .offcanvas-header {
+            .btn-close {
+                position: relative;
+                left: 90%;
+                border: none;
+                color: $firstColor;
+                background-color: $firstColor;
+            }
+        }
+        .offcanvas-body {
+            .img-fluid {
+                height: 570px;
+                margin: -180px auto;
+            }
+            .navbar-nav {
+                margin-top: 20px;
+                line-height: 40px;
+                text-align: center;
+                @include flex (column);
+                .nav-item {
+                    .dropdown-toggle, .nav-link {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        margin-top: -7px;
+                        color: $firstColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                    #univers {
+                        height: 100px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 300px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
+                    }
+                    #media {
+                        height: 100px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 300px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
+                    }
+                }
+                #btnSubscribe {
+                    display: block;
+                    padding: 6px;
+                    max-width: 180px;
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin: 7px auto;
+                    margin-right: 55px;
+                    border-radius: 5px;
+                    color: $firstColor;
+                    background: transparent;
+                    border: 1px solid $firstColor;
+                    text-shadow: 1px 0px 3px $secondColor;
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QUERY 
+@media screen and (max-width: 1024px) {
+    #main {
+        #carouselTlou {
+            .carousel-inner {
+                .carousel-item {
+                    .d-block {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #tlou {
+        .show {
+            .logo {
+                max-width: 600px;
+            top: 0%;
+            left: 45%;
+            }
+        }
+        .media {
+            height: 860px;
+            .carousel {
+                margin: -10px auto;
+                .carousel-indicators {
+                    left: -9%;
+                    width: 1000px;
+                }
+                .carousel-inner {
+                    .carousel-item {
+                        .img-fluid {
+                            max-width: 950px;
+                        }
+                        video {
+                            max-width: 950px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 970px) {
+    #main {
+        #carouselTlou {
+            .carousel-inner {
+                .carousel-item {
+                    .d-block {
+                        max-width: 100%;
+                    }
+                    .containTlou {
+                        .navbar {
+                            justify-content: space-between;
+                            #btnBar {
+                                right: 2%;
+                                display: block;
+                                position: absolute;
+                            }
+                            .collapse {
+                                .navbar-nav {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #tlou {
+        .show {
+            .navbar {
+                justify-content: space-between;
+                #btnBar {
+                    right: 2%;
+                    display: block;
+                    position: absolute;
+                }
+                .collapse {
+                    .navbar-nav {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        #carouselTlou {
+            .carousel-inner {
+                .carousel-item {
+                    .d-block {
+                        width: 100%;
+
+                    }
+                }
+            }
+        }
+    }
+    #suscribe {
+        .containSuscribe {
+            top: 48%;
+            max-width: 600px;
+            .suscribe {
+                font-size: 1.7em;
+            }
+            form {
+                margin: -14px auto;
+                .row {
+                    .col-lg-8 {
+                        .form-control {
+                            margin: auto;
+                            max-width: 60%;
+                        }
+                    }
+                    .col-lg-4 {
+                        #btnSuscribe {
+                            margin: 20px auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #tlou {
+        .show {
+            .navbar {
+                #btnBar {
+                    margin-right: 15px;
+                }
+            }
+            .logo {
+                max-width: 600px;
+                top: 10%;
+                left: 13%;
+            }
+            .pitch {
+                max-width: 650px;
+                .sentence {
+                    margin: -10px auto;
+                    font-size: 1.2em;
+                }
+            }
+        }
+        .experience {
+            .row {
+                height: 340px;
+                overflow: auto;
+                text-align: center;
+            }
+        }
+        .media {
+            height: 1260px;
+            .carousel {
+                margin: -10px auto;
+                .carousel-indicators {
+                    left: 5%;
+                    width: 450px;
+                    bottom: -88%;
+                    margin: auto;
+                    .row {
+                        margin: auto;
+                        height: 500px;
+                        overflow: auto;
+                        .col-lg-2 {
+                            .img-fluid {
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+                .carousel-inner {
+                    .carousel-item {
+                        .img-fluid {
+                            max-width: 950px;
+                        }
+                        video {
+                            margin-top: -80px;
+                            margin-bottom: -20px;
+                            height: 680px;
+                            max-width: 750px;
+                        }
+                    }
+                }
+            }
+            .footer {
+                margin: 560px auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #main {
+        #carouselTlou {
+            .carousel-inner {
+                .carousel-item {
+                    .d-block {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #tlou {
+        .show {
+            .logo {
+                max-width: 400px;
+                top: -20%;
+                left: 3%;
+                height: 120px;
+            }
+            .pitch {
+                top: 22%;
+                position: relative;
+                .sentence {
+                    margin: auto;
+                    height: 120px;
+                    overflow: auto;
+                    font-size: 1.2em;
+                    max-width: 360px;
+                }
+            }
+        }
+        .experience {
+            height: 410px;
+            .livePlayer {
+                font-size: 1.5em;
+            }
+            .row {
+                height: 330px;
+                overflow: auto;
+                text-align: center;
+            }
+        }
+        .media {
+            height: 860px;
+            .carousel {
+                margin: -10px auto;
+                .carousel-indicators {
+                    left: 5%;
+                    width: 350px;
+                    bottom: -86%;
+                    margin: auto;
+                    .row {
+                        margin: auto;
+                        height: 300px;
+                        overflow: auto;
+                        .col-lg-2 {
+                            .img-fluid {
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+                .carousel-inner {
+                    .carousel-item {
+                        .img-fluid {
+                            height: 370px;
+                            max-width: 360px;
+                        }
+                        video {
+                            margin-top: -120px;
+                            margin-bottom: -20px;
+                            height: 500px;
+                            max-width: 350px;
+                        }
+                    }
+                }
+            }
+            .footer {
+                margin: 380px auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #main {
+        #carouselTlou {
+            .carousel-inner {
+                .carousel-item {
+                    .d-block {
+                        max-width: 100%;
+                    }
+                    .containTlou {
+                        .footer {
+                            left: 18%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #tlou {
+        .show {
+            .logo {
+                max-width: 400px;
+                top: -20%;
+                left: 3%;
+                height: 120px;
+            }
+            .pitch {
+                top: 22%;
+                position: relative;
+                .sentence {
+                    margin: auto;
+                    height: 120px;
+                    overflow: auto;
+                    font-size: 1.2em;
+                    max-width: 360px;
+                }
+            }
+        }
+        .experience {
+            height: 420px;
+            .livePlayer {
+                font-size: 1.5em;
+            }
+            .row {
+                height: 330px;
+                overflow: auto;
+                text-align: center;
+            }
+        }
+        .media {
+            height: 860px;
+            .carousel {
+                margin: -10px auto;
+                .carousel-indicators {
+                    left: 5%;
+                    width: 350px;
+                    bottom: -98%;
+                    margin: auto;
+                    .row {
+                        margin: auto;
+                        height: 300px;
+                        overflow: auto;
+                        .col-lg-2 {
+                            .img-fluid {
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+                .carousel-inner {
+                    .carousel-item {
+                        .img-fluid {
+                            height: 340px;
+                            max-width: 320px;
+                        }
+                        video {
+                            margin-top: -120px;
+                            margin-bottom: -20px;
+                            height: 500px;
+                            max-width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #main {
+        #carouselTlou {
+            .carousel-inner {
+                .carousel-item {
+                    .d-block {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #tlou {
+        .show {
+            .navbar {
+                #btnBar {
+                    margin-right: 7px;
+                }
+            }
+            .logo {
+                max-width: 400px;
+                top: -20%;
+                left: 3%;
+                height: 120px;
+            }
+            .pitch {
+                top: 22%;
+                position: relative;
+                .sentence {
+                    margin: auto;
+                    height: 120px;
+                    overflow: auto;
+                    font-size: 1.2em;
+                    max-width: 360px;
+                }
+            }
+        }
+        .experience {
+            height: 420px;
+            .livePlayer {
+                font-size: 1.5em;
+            }
+            .row {
+                height: 330px;
+                overflow: auto;
+                text-align: center;
+            }
+        }
+        .media {
+            height: 860px;
+            .carousel {
+                margin: -10px auto;
+                .carousel-indicators {
+                    left: 0%;
+                    width: 260px;
+                    bottom: -98%;
+                    margin: auto;
+                    .row {
+                        margin: auto;
+                        height: 300px;
+                        overflow: auto;
+                        .col-lg-2 {
+                            .img-fluid {
+                                height: 200px;
+                            }
+                        }
+                    }
+                }
+                .carousel-inner {
+                    .carousel-item {
+                        .img-fluid {
+                            height: 340px;
+                            max-width: 320px;
+                        }
+                        video {
+                            margin-top: -120px;
+                            margin-bottom: -20px;
+                            height: 500px;
+                            max-width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<section id="suscribe">
+    <button type="button" id="btnCloseSuscribe" [routerLink]="'/main'"><i class="fas fa-times"></i></button>
+    <div class="containSuscribe">
+        <p class="suscribe">ABONNEZ-VOUS A LA NEWSLETTER OFFICIEL DE THE LAST OF US :</p>
+        <p class="info">Retrouvez toutes les infos et annonces à propos de l'univers The Last Of Us sur votre fil d'actualité !</p>
+        <form [formGroup]="register" (ngSubmit)="suscribe()">
+            <div class="row">
+                <div class="col-lg-8">
+                    <input type="email" name="adress" class="form-control" id="adress" placeholder="Entrer votre adresse email" [ngClass]="{'is.invalid' : register.get('adress')?.invalid && register.get('adress')?.touched }">
+                    <div class="warning" *ngIf="register.get('adress')?.invalid && (register.get('adress')?.dirty || register.get('adress')?.touched)">
+                        <div class="alert alert-danger" *ngIf="register.get('adress')?.hasError('required')">Adresse email requise</div>
+                        <div class="alert alert-danger" *ngIf="register.get('adress')?.hasError('pattern')">Forme de l'adresse email incorrect</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <button type="submit" id="btnSuscribe">S'INSCRIRE</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
