@@ -734,6 +734,85 @@ body {
   text-shadow: 1px 0px 3px black;
 }
 
+#serieTv {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#serieTv .navbar {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#serieTv .navbar .navbar-brand .img-fluid {
+  height: 300px;
+  max-width: 250px;
+}
+#serieTv .navbar #btnBar {
+  display: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4em;
+  color: azure;
+  background: transparent;
+}
+#serieTv .navbar .collapse {
+  margin-right: 15px;
+  justify-content: end;
+}
+#serieTv .navbar .collapse .navbar-nav {
+  margin-right: 10px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+#serieTv .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#serieTv .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#serieTv .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item, #serieTv .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 300px;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#serieTv .navbar .collapse .navbar-nav #btnSubscribe {
+  padding: 6px;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -4px;
+  border-radius: 5px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+  text-shadow: 1px 0px 3px black;
+}
+#serieTv .containSerieTv #serieTvLogo {
+  height: 300px;
+  max-width: 400px;
+}
+
 @media screen and (max-width: 1024px) {
   #main #carouselTlou .carousel-inner .carousel-item .d-block {
     max-width: 100%;
