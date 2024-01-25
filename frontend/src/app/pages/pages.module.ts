@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CardDirective } from '../card.directive';
 import { MainComponent } from './main/main.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { TlouComponent } from './tlou/tlou.component';
@@ -11,6 +12,7 @@ import { InfectesComponent } from './infectes/infectes.component';
 import { SerieTvComponent } from './serie-tv/serie-tv.component';
 import { AmericanDreamsComponent } from './american-dreams/american-dreams.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ShowLigthComponent } from './show-ligth/show-ligth.component';
 
 const routes: Routes = [
   { path: 'main', component: MainComponent },
@@ -20,12 +22,14 @@ const routes: Routes = [
   { path: 'infectes', component: InfectesComponent },
   { path: 'subscribe', component: SubscribeComponent },
   { path: 'characters', component: CharactersComponent },
+  { path: 'showLigth', component: ShowLigthComponent },
   { path: 'americanDreams', component: AmericanDreamsComponent },
   { path: '', redirectTo: '/main', pathMatch: 'full' },
 ];
 
 @NgModule({
   declarations: [
+    CardDirective,
     MainComponent,
     SubscribeComponent,
     TlouComponent,
@@ -33,7 +37,8 @@ const routes: Routes = [
     FactionsComponent,
     InfectesComponent,
     SerieTvComponent,
-    AmericanDreamsComponent
+    AmericanDreamsComponent,
+    ShowLigthComponent
   ],
   imports: [
     FormsModule,

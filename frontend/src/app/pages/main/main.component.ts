@@ -23,7 +23,7 @@ export class MainComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any): void {
-    this.isSmallScreen = window.innerWidth < 426;
+    this.isSmallScreen = window.innerWidth < 768;
   }
 
   ngOnInit(): void {}

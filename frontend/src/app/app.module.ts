@@ -5,12 +5,10 @@ import { PagesModule } from './pages/pages.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CardDirective } from './card.directive';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CardDirective
+    AppComponent
   ],
   imports: [
     PagesModule,

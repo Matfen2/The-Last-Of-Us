@@ -73,6 +73,18 @@ $secondColor: black;
                                         text-decoration: none;
                                         text-shadow: 1px 0px 3px $secondColor;
                                     }
+                                    #univers, #media {
+                                        .dropdown-item {
+                                            overflow: auto;
+                                            max-width: 300px;
+                                            font-size: 1.4em;
+                                            font-weight: bold;
+                                            margin-top: -7px;
+                                            color: $secondColor;
+                                            text-decoration: none;
+                                            text-shadow: 1px 0px 0px $secondColor;
+                                        }
+                                    }
                                 }
                                 #btnSubscribe {
                                     padding: 6px;
@@ -136,83 +148,85 @@ $secondColor: black;
             margin: 55px auto;
         }
     }
-    #showLigth {
-        height: 530px;
-        width: 100%;
-        max-width: 300px;
-        border-radius: 0px 0px 40px 0px;
-        border: 2px solid $firstColor;
-        background-color: $secondColor;
-        .offcanvas-header {
-            .btn-close {
-                position: relative;
-                left: 90%;
-                border: none;
-                color: $firstColor;
-                background-color: $firstColor;
-            }
+}
+
+// SHOW LIGTH
+#showLigth {
+    height: 530px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0px 0px 40px 0px;
+    border: 2px solid $firstColor;
+    background-color: $secondColor;
+    .offcanvas-header {
+        .btn-close {
+            position: relative;
+            left: 90%;
+            border: none;
+            color: $firstColor;
+            background-color: $firstColor;
         }
-        .offcanvas-body {
-            .img-fluid {
-                height: 570px;
-                margin: -180px auto;
-            }
-            .navbar-nav {
-                margin-top: 20px;
-                line-height: 40px;
-                text-align: center;
-                @include flex (column);
-                .nav-item {
-                    .dropdown-toggle, .nav-link {
+    }
+    .offcanvas-body {
+        .img-fluid {
+            height: 570px;
+            margin: -180px auto;
+        }
+        .navbar-nav {
+            margin-top: 20px;
+            line-height: 40px;
+            text-align: center;
+            @include flex (column);
+            .nav-item {
+                .dropdown-toggle, .nav-link {
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    margin-top: -7px;
+                    color: $firstColor;
+                    text-decoration: none;
+                    text-shadow: 1px 0px 3px $secondColor;
+                }
+                #univers {
+                    height: 100px;
+                    .dropdown-item {
+                        overflow: auto;
+                        max-width: 300px;
                         font-size: 1.4em;
                         font-weight: bold;
                         margin-top: -7px;
-                        color: $firstColor;
+                        color: $secondColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
-                    }
-                    #univers {
-                        height: 100px;
-                        .dropdown-item {
-                            overflow: auto;
-                            max-width: 300px;
-                            font-size: 1.4em;
-                            font-weight: bold;
-                            margin-top: -7px;
-                            color: $secondColor;
-                            text-decoration: none;
-                            text-shadow: 1px 0px 0px $secondColor;
-                        }
-                    }
-                    #media {
-                        height: 100px;
-                        .dropdown-item {
-                            overflow: auto;
-                            max-width: 300px;
-                            font-size: 1.4em;
-                            font-weight: bold;
-                            margin-top: -7px;
-                            color: $secondColor;
-                            text-decoration: none;
-                            text-shadow: 1px 0px 0px $secondColor;
-                        }
+                        text-shadow: 1px 0px 0px $secondColor;
                     }
                 }
-                #btnSubscribe {
-                    display: block;
-                    padding: 6px;
-                    max-width: 180px;
-                    font-size: 1.4em;
-                    font-weight: bold;
-                    cursor: pointer;
-                    margin: 7px auto;
-                    margin-right: 55px;
-                    border-radius: 5px;
-                    color: $firstColor;
-                    background: transparent;
-                    border: 1px solid $firstColor;
-                    text-shadow: 1px 0px 3px $secondColor;
+                #media {
+                    height: 100px;
+                    .dropdown-item {
+                        overflow: auto;
+                        max-width: 300px;
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        margin-top: -7px;
+                        color: $secondColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 0px $secondColor;
+                    }
                 }
+            }
+            #btnSubscribe {
+                display: block;
+                padding: 6px;
+                max-width: 180px;
+                font-size: 1.4em;
+                font-weight: bold;
+                cursor: pointer;
+                margin: 7px auto;
+                margin-right: 55px;
+                border-radius: 5px;
+                color: $firstColor;
+                background: transparent;
+                border: 1px solid $firstColor;
+                text-shadow: 1px 0px 3px $secondColor;
             }
         }
     }
@@ -328,6 +342,19 @@ $secondColor: black;
                         color: $firstColor;
                         text-decoration: none;
                         text-shadow: 1px 0px 3px $secondColor;
+                    }
+                    #univers, #media {
+                        height: 80px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 300px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
                     }
                 }
                 #btnSuscribe {
@@ -464,34 +491,43 @@ $secondColor: black;
             }
         }
     }
-    #showLigth {
-        height: 530px;
+}
+
+// INFECTES
+#infectes {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .navbar {
+        position: absolute;
+        top: -10%;
+        left: 0;
         width: 100%;
-        max-width: 300px;
-        border-radius: 0px 0px 40px 0px;
-        border: 2px solid $firstColor;
-        background-color: $secondColor;
-        .offcanvas-header {
-            .btn-close {
-                position: relative;
-                left: 90%;
-                border: none;
-                color: $firstColor;
-                background-color: $firstColor;
+        position: relative;
+        @include flex (row);
+        .navbar-brand {
+            .img-fluid {
+                height: 300px;
+                max-width: 250px;
             }
         }
-        .offcanvas-body {
-            .img-fluid {
-                height: 570px;
-                margin: -180px auto;
-            }
+        #btnBar {
+            display: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.4em;
+            color: $firstColor;
+            background: transparent;
+        }
+        .collapse {
+            margin-right: 15px;
+            justify-content: end;
             .navbar-nav {
-                margin-top: 20px;
-                line-height: 40px;
-                text-align: center;
-                @include flex (column);
+                margin-right: 10px;
+                column-gap: 80px;
                 .nav-item {
-                    .dropdown-toggle, .nav-link {
+                    .nav-link {
                         font-size: 1.4em;
                         font-weight: bold;
                         margin-top: -7px;
@@ -499,42 +535,20 @@ $secondColor: black;
                         text-decoration: none;
                         text-shadow: 1px 0px 3px $secondColor;
                     }
-                    #univers {
-                        height: 100px;
-                        .dropdown-item {
-                            overflow: auto;
-                            max-width: 300px;
-                            font-size: 1.4em;
-                            font-weight: bold;
-                            margin-top: -7px;
-                            color: $secondColor;
-                            text-decoration: none;
-                            text-shadow: 1px 0px 0px $secondColor;
-                        }
-                    }
-                    #media {
-                        height: 100px;
-                        .dropdown-item {
-                            overflow: auto;
-                            max-width: 300px;
-                            font-size: 1.4em;
-                            font-weight: bold;
-                            margin-top: -7px;
-                            color: $secondColor;
-                            text-decoration: none;
-                            text-shadow: 1px 0px 0px $secondColor;
-                        }
+                    .dropdown-toggle {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        color: $firstColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 3px $secondColor;
                     }
                 }
                 #btnSubscribe {
-                    display: block;
                     padding: 6px;
-                    max-width: 180px;
                     font-size: 1.4em;
                     font-weight: bold;
                     cursor: pointer;
-                    margin: 7px auto;
-                    margin-right: 55px;
+                    margin-top: -4px;
                     border-radius: 5px;
                     color: $firstColor;
                     background: transparent;
@@ -544,9 +558,244 @@ $secondColor: black;
             }
         }
     }
+    .containInfectes {
+        height: 350px;
+        margin: -180px auto;
+        .different {
+            text-align: center;
+            font-size: 2.0em;
+            font-weight: bold;
+            color: $firstColor;
+            text-shadow: 1px 0px 3px $secondColor;
+        }
+        .people {
+            .row {
+                width: 100%;
+                margin: 50px auto;
+                .col-lg-2 {
+                    padding: 10px 20px;
+                    .img-fluid {
+                        height: 450px;
+                        max-width: 670px;
+                    }
+                    .types {
+                        margin: 20px auto;
+                        .name {
+                            text-align: center;
+                            font-size: 1.7em;
+                            font-weight: bold;
+                            color: $firstColor;
+                            text-shadow: 1px 0px 3px $secondColor;
+                        }
+                    }
+                }
+            }
+        }
+        #btnVideo {
+            padding: 6px;
+            font-size: 1.4em;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin: -35px auto;
+            border-radius: 5px;
+            color: $firstColor;
+            background: transparent;
+            border: 1px solid $firstColor;
+            text-shadow: 1px 0px 3px $secondColor;
+            .hrefVideo {
+                color: $firstColor;
+                text-decoration: none;
+                &:hover {
+                    color: $secondColor;
+                    text-shadow: 1px 0px 0px $secondColor;
+                }
+            }
+            &:hover {
+                background-color: $firstColor;
+            }
+        }
+    }
+    .footer {
+        top: 97%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        .copy {
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: bold;
+            color: $firstColor;
+            text-shadow: 1px 0px 3px $secondColor;
+        }
+    }
+}
+
+// FACTIONS 
+#factions {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .navbar {
+        position: absolute;
+        top: -10%;
+        left: 0;
+        width: 100%;
+        position: relative;
+        @include flex (row);
+        .navbar-brand {
+            .img-fluid {
+                height: 300px;
+                max-width: 250px;
+            }
+        }
+        #btnBar {
+            display: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.4em;
+            color: $firstColor;
+            background: transparent;
+        }
+        .collapse {
+            margin-right: 15px;
+            justify-content: end;
+            .navbar-nav {
+                margin-right: 10px;
+                column-gap: 80px;
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        margin-top: -7px;
+                        color: $firstColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                    .dropdown-toggle {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        color: $firstColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                }
+                #btnSubscribe {
+                    padding: 6px;
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-top: -4px;
+                    border-radius: 5px;
+                    color: $firstColor;
+                    background: transparent;
+                    border: 1px solid $firstColor;
+                    text-shadow: 1px 0px 3px $secondColor;
+                }
+            }
+        }
+    }
+    .containFactions {
+        top: 55%;
+        left: 50%;
+        width: 2000px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        .different {
+            text-align: center;
+            font-size: 2.0em;
+            font-weight: bold;
+            color: $firstColor;
+            margin: -60px auto;
+            text-shadow: 1px 0px 3px $secondColor;
+        }
+        .row {
+            top: 10%;
+            left: 50%;
+            position: relative;
+            transform: translate(-42%, 10%);
+            margin: 60px auto;
+            .col-lg-2 {
+                padding: 10px 20px;
+                .img-fluid {
+                    height: 450px;
+                    max-width: 700px;
+                }
+                .types {
+                    margin: 20px auto;
+                    .name {
+                        text-align: center;
+                        font-size: 1.7em;
+                        font-weight: bold;
+                        color: $firstColor;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        top: 96%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 50px; 
+        .copy {
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: bold;
+            color: $firstColor;
+            text-shadow: 1px 0px 3px $secondColor;
+        }
+    }
+    .modal {
+        #btnCloseModal {
+            top: 0%;
+            left: 97%;
+            border: none;
+            font-size: 1.6em;
+            color: $firstColor;
+            position: absolute;
+            background: transparent;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        .modal-dialog {
+            .modal-content {
+                border: 1px solid $firstColor;
+                background-color: $secondColor;
+                .modal-body {
+                    .img-fluid {
+                        height: 450px;
+                    }
+                    .info {
+                        padding-top: 5px;
+                        font-size: 1.4em;
+                        text-align: center;
+                        margin-bottom: -10px;
+                        font-weight: bold;
+                        color: $firstColor;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // MEDIA QUERY 
+@media screen and (max-width: 1440px) {
+
+}
+
 @media screen and (max-width: 1024px) {
     #main {
         #carouselTlou {
@@ -586,6 +835,28 @@ $secondColor: black;
                     }
                 }
             }
+        }
+    }
+    #infectes {
+        .containInfectes {
+           .people {
+            width: 1000px;
+            margin: 0px auto;
+                overflow: auto;
+                .row {
+                    top: 50%;
+                    left: 40%;
+                    height: 550px;
+                    overflow: auto;
+                    width: 1700px;
+                    position: relative;
+                    margin: auto;
+                    @include flex (column);
+                }
+           }
+           #btnVideo {
+               margin: 15px auto;
+           }
         }
     }
 }
@@ -633,6 +904,21 @@ $secondColor: black;
                 }
             }
         }
+    }
+    #infectes {
+        .navbar {
+                justify-content: space-between;
+                #btnBar {
+                    right: 2%;
+                    display: block;
+                    position: absolute;
+                }
+                .collapse {
+                    .navbar-nav {
+                        display: none;
+                    }
+                }
+            }
     }
 }
 
@@ -740,6 +1026,41 @@ $secondColor: black;
             }
         }
     }
+    #infectes {
+        .containInfectes {
+           .people {
+                height: 650px;
+                width: 600px;
+                margin: 0px auto;
+                overflow: auto;
+                .row {
+                    top: 2%;
+                    left: -7%;
+                    height: 580px;
+                    overflow: auto;
+                    width: 740px;
+                    position: relative;
+                    margin: auto;
+                    @include flex (column);
+                    .col-lg-2 {
+                        margin-left: -20px;
+                        margin-right: 20px;
+                        .img-fluid {
+                            top: 45%;
+                            left: 50%;
+                            position: relative;
+                            transform: translate(-50%, -50%);
+                            max-width: 400px;
+                            height: 480px;
+                        }
+                    }
+                }
+           }
+           #btnVideo {
+               margin: -55px auto;
+           }
+        }
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -749,6 +1070,13 @@ $secondColor: black;
                 .carousel-item {
                     .d-block {
                         max-width: 100%;
+                    }
+                    .containTlou {
+                        .footer {
+                            .copy {
+                                font-size: 1.2em;
+                            }
+                        }
                     }
                 }
             }
@@ -825,6 +1153,46 @@ $secondColor: black;
             }
         }
     }
+    #infectes {
+        .containInfectes {
+           .people {
+                height: 650px;
+                width: 320px;
+                margin: 0px auto;
+                overflow: auto;
+                .row {
+                    top: 3%;
+                    left: -40%;
+                    height: 520px;
+                    overflow: auto;
+                    width: 620px;
+                    position: relative;
+                    margin: auto;
+                    @include flex (column);
+                    .col-lg-2 {
+                        margin-left: -20px;
+                        margin-right: 20px;
+                        .img-fluid {
+                            top: 45%;
+                            left: 48%;
+                            position: relative;
+                            transform: translate(-50%, -50%);
+                            max-width: 300px;
+                            height: 420px;
+                        }
+                    }
+                }
+           }
+           #btnVideo {
+               margin: -95px auto;
+           }
+        }
+        .footer {
+            .copy {
+                font-size: 1.2em;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -837,7 +1205,10 @@ $secondColor: black;
                     }
                     .containTlou {
                         .footer {
-                            left: 18%;
+                           .copy {
+                            width: 200px;
+                                font-size: 1.2em;
+                            }
                         }
                     }
                 }
@@ -909,6 +1280,45 @@ $secondColor: black;
                         }
                     }
                 }
+            }
+        }
+    }
+    #infectes {
+        .containInfectes {
+            margin: -170px auto;
+           .people {
+                height: 650px;
+                width: 290px;
+                .row {
+                    top: 2%;
+                    left: -20%;
+                    height: 500px;
+                    overflow: auto;
+                    width: 480px;
+                    position: relative;
+                    margin: auto;
+                    @include flex (column);
+                    .col-lg-2 {
+                        margin-left: -20px;
+                        margin-right: 20px;
+                        .img-fluid {
+                            top: 45%;
+                            left: 48%;
+                            position: relative;
+                            transform: translate(-50%, -50%);
+                            max-width: 300px;
+                            height: 420px;
+                        }
+                    }
+                }
+           }
+           #btnVideo {
+               margin: -105px auto;
+           }
+        }
+        .footer {
+            .copy {
+                font-size: 1.2em;
             }
         }
     }

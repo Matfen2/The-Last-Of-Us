@@ -1,10 +1,29 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appCard]'
+  selector: '[appCard]',
 })
 export class CardDirective {
+  constructor(private el: ElementRef) {
+    this.scale('');
+    this.cursor('');
+  }
 
-  constructor() { }
+  private scale(up: string) {
+    this.el.nativeElement.style.scale = up;
+  }
 
+  private cursor(pointer: string) {
+    this.el.nativeElement.style.cursor = pointer;
+  }
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.cursor('pointer');
+    this.scale('0.9');
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    this.cursor('pointer');
+    this.scale('1.0');
+  }
 }

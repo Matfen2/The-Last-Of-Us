@@ -4,34 +4,13 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-tlou',
   templateUrl: './tlou.component.html',
-  styleUrl: './tlou.component.css',
+  styleUrls: ['./tlou.component.css'],
 })
 export class TlouComponent implements OnInit {
   constructor(private routes: ActivatedRoute) {}
 
   tlouId!: number;
   tlouDetails: any;
-
-  firstMedia = [
-    {
-      id: 2,
-      new: '/assets/pict/part2/theLastOfUsPart2Pict4.jpg',
-    },
-  ];
-
-  secondMedia = [
-    {
-      id: 2,
-      new: '/assets/pict/part2/theLastOfUsPart2Pict5.jpg',
-    },
-  ];
-
-  thirdMedia = [
-    {
-      id: 2,
-      new: '/assets/pict/part2/theLastOfUsPart2Pict6.jpg',
-    },
-  ];
 
   isSmallScreen: boolean = false;
 
@@ -76,7 +55,7 @@ export class TlouComponent implements OnInit {
       thirdMedia: '/assets/pict/part1/theLastOfUsPart1Pict6.jpeg',
       fourMedia: '/assets/pict/part1/theLastOfUsPart1Pict7.jpeg',
       fiveMedia: '/assets/pict/part1/theLastOfUsPart1Pict8.jpeg',
-      sixMedia: '/assets/pict/part1/theLastOfUsPart1Pict9.jpeg',
+      sixMedia: '/assets/pict/part1/theLastOfUsPart1Pict9.jpg',
     },
     {
       id: 2,
