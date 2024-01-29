@@ -46,14 +46,21 @@
             <div class="presentCharacters" *ngSwitchCase="'main'">
                 <div class="row">
                     <div class="col-lg-4" *ngFor="let main of mains">
-                        <img [src]="main.pictOne" class="img-fluid w-100" />
+                        <img [src]="main.pictOne" data-bs-toggle="modal" [attr.data-bs-target]="'#' + main.modal" class="img-fluid w-100" appPresent />
                     </div>
                 </div>
             </div>
             <div class="presentCharacters" *ngSwitchCase="'secondaryPart1'">
                 <div class="row">
                     <div class="col-lg-3" *ngFor="let secondaryPartOne of secondarysPart1">
-                        <img [src]="secondaryPartOne.pictOne" class="img-fluid w-100" />
+                        <img [src]="secondaryPartOne.pictOne" data-bs-toggle="modal" [attr.data-bs-target]="'#' + secondaryPartOne.modal" class="img-fluid w-100" appPresent />
+                    </div>
+                </div>
+            </div>
+            <div class="presentCharacters" *ngSwitchCase="'secondaryPart2'">
+                <div class="row">
+                    <div class="col-lg-3" *ngFor="let secondaryPartTwo of secondarysPart2">
+                        <img [src]="secondaryPartTwo.pictOne" data-bs-toggle="modal" [attr.data-bs-target]="'#' + secondaryPartTwo.modal" class="img-fluid w-100" appPresent />
                     </div>
                 </div>
             </div>
@@ -61,6 +68,51 @@
     </div>
     <div class="footer">
         <p class="copy">© The Last Of Us 2024</p>
+    </div>
+
+    <div *ngFor="let main of mains">
+        <div class="modal fade" [id]="main.modal">
+            <button type="button" id="btnCloseModal" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img [src]="main.pictTwo" class="img-fluid w-100" alt="group" />
+                        <p class="name">{{ main.name }}</p>
+                        <p class="info">{{ main.story }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngFor="let secondaryPartOne of secondarysPart1">
+        <div class="modal fade" [id]="secondaryPartOne.modal">
+            <button type="button" id="btnCloseModal" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img [src]="secondaryPartOne.pictTwo" class="img-fluid w-100" alt="group" />
+                        <p class="name">{{ secondaryPartOne.name }}</p>
+                        <p class="info">{{ secondaryPartOne.story }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngFor="let secondaryPartTwo of secondarysPart2">
+        <div class="modal fade" [id]="secondaryPartTwo.modal">
+            <button type="button" id="btnCloseModal" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img [src]="secondaryPartTwo.pictTwo" class="img-fluid w-100" alt="group" />
+                        <p class="name">{{ secondaryPartTwo.name }}</p>
+                        <p class="info">{{ secondaryPartTwo.story }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <app-show-ligth></app-show-ligth>

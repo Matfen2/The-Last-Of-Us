@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardDirective } from '../card.directive';
+import { PresentDirective } from '../present.directive';
 import { MainComponent } from './main/main.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { TlouComponent } from './tlou/tlou.component';
@@ -33,6 +34,7 @@ const routes: Routes = [
     MainComponent,
     SubscribeComponent,
     TlouComponent,
+    PresentDirective,
     CharactersComponent,
     FactionsComponent,
     InfectesComponent,

@@ -848,7 +848,7 @@ body {
   left: 50%;
   position: relative;
   cursor: pointer;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: bold;
   color: azure;
   transition: all 0.25ms ease;
@@ -859,18 +859,30 @@ body {
   margin: 150px auto;
 }
 #characters .containCharacters .showCharacters .presentCharacters {
-  height: 450px;
+  height: 400px;
   overflow: auto;
 }
 #characters .containCharacters .showCharacters .presentCharacters .row {
   margin: auto;
   max-width: 1700px;
 }
-#characters .containCharacters .showCharacters .presentCharacters .row .col-lg-4 .img-fluid, #characters .containCharacters .showCharacters .presentCharacters .row .col-lg-3 .img-fluid {
+#characters .containCharacters .showCharacters .presentCharacters .row .col-lg-3 .img-fluid {
   margin-top: 20px;
   height: 380px;
   cursor: pointer;
   max-width: 600px;
+  border-radius: 20px;
+  border: 1px solid azure;
+}
+#characters .containCharacters .showCharacters .presentCharacters .row .col-lg-4 {
+  margin: auto;
+  text-align: center;
+}
+#characters .containCharacters .showCharacters .presentCharacters .row .col-lg-4 .img-fluid {
+  margin-top: 20px;
+  height: 380px;
+  cursor: pointer;
+  max-width: 450px;
   border-radius: 20px;
   border: 1px solid azure;
 }
@@ -889,6 +901,43 @@ body {
   font-size: 1.4em;
   font-weight: bold;
   color: azure;
+  text-shadow: 1px 0px 3px black;
+}
+#characters .modal #btnCloseModal {
+  top: 0%;
+  left: 98%;
+  border: none;
+  font-size: 1.6em;
+  color: azure;
+  position: absolute;
+  background: transparent;
+}
+#characters .modal #btnCloseModal:hover {
+  transform: scale(1.2);
+}
+#characters .modal .modal-dialog .modal-content {
+  border: 1px solid azure;
+  background-color: black;
+}
+#characters .modal .modal-dialog .modal-content .modal-body .img-fluid {
+  height: 420px;
+}
+#characters .modal .modal-dialog .modal-content .modal-body .name {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: center;
+  color: azure;
+  text-shadow: 1px 0px 3px black;
+}
+#characters .modal .modal-dialog .modal-content .modal-body .info {
+  height: 140px;
+  overflow: auto;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: azure;
+  text-align: center;
+  text-decoration: none;
   text-shadow: 1px 0px 3px black;
 }
 
