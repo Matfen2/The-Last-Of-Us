@@ -27,7 +27,51 @@
     </div>
     <div class="containSerieTv">
         <img src="/assets/pict/media/serieTV/theLastOfUsSerieLogo.png" class="img-fluid w-100" id="serieTvLogo" alt="serieTvLogo" />
-
+        <p class="pitch">Cette série écrit par Neil Druckmann et produit par Craig Marzin a pour but d’approndir encore les histoires des jeux que ce soit l’univers, les personnages.</p>
+    </div>
+    <div class="listEpisode">
+        <div id="carouselListEpisodes" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4" *ngFor="let arc1 of arcFirst">
+                            <img [src]="arc1.episode" class="img-fluid w-100" />
+                            <span class="nameEpisode">
+                                <p class="title">{{arc1.title}}</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4" *ngFor="let arc2 of arcSecond">
+                            <img [src]="arc2.episode" class="img-fluid w-100" />
+                            <span class="nameEpisode">
+                                <p class="title">{{arc2.title}}</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4" *ngFor="let arc3 of arcThird">
+                            <img [src]="arc3.episode" class="img-fluid w-100" />
+                            <span class="nameEpisode">
+                                <p class="title">{{arc3.title}}</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselListEpisodes" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselListEpisodes" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
     <div class="footer">
         <p class="copy">© The Last Of Us 2024</p>

@@ -97,6 +97,11 @@ $secondColor: black;
                                     background: transparent;
                                     border: 1px solid $firstColor;
                                     text-shadow: 1px 0px 3px $secondColor;
+                                    &:hover {
+                                        color: $secondColor;
+                                        background: $firstColor;
+                                        text-shadow: 1px 0px 0px $secondColor;
+                                    }
                                 }
                             }
                         }
@@ -285,6 +290,7 @@ $secondColor: black;
                         &:hover {
                             color: $secondColor;
                             background: $firstColor;
+                            text-shadow: 1px 0px 0px $secondColor;
                         }
                     }
                 }
@@ -368,10 +374,15 @@ $secondColor: black;
                     background: transparent;
                     border: 1px solid $firstColor;
                     text-shadow: 1px 0px 3px $secondColor;
-                }
+                    &:hover {
+                        color: $secondColor;
+                        background: $firstColor;
+                        text-shadow: 1px 0px 0px $secondColor;
+                    }
                 }
             }
         }
+    }
         .logo {
             max-width: 600px;
             top: 0%;
@@ -554,6 +565,10 @@ $secondColor: black;
                     background: transparent;
                     border: 1px solid $firstColor;
                     text-shadow: 1px 0px 3px $secondColor;
+                    &:hover {
+                        color: $secondColor;
+                        background: $firstColor;
+                    }
                 }
             }
         }
@@ -695,6 +710,11 @@ $secondColor: black;
                     background: transparent;
                     border: 1px solid $firstColor;
                     text-shadow: 1px 0px 3px $secondColor;
+                    &:hover {
+                        color: $secondColor;
+                        background: $firstColor;
+                        text-shadow: 1px 0px 0px $secondColor;
+                    }
                 }
             }
         }
@@ -791,8 +811,321 @@ $secondColor: black;
     }
 }
 
+// CAHRACTERS
+#characters {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .navbar {
+        position: absolute;
+        top: -10%;
+        left: 0;
+        width: 100%;
+        position: relative;
+        @include flex (row);
+        .navbar-brand {
+            .img-fluid {
+                height: 300px;
+                max-width: 250px;
+            }
+        }
+        #btnBar {
+            display: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.4em;
+            color: $firstColor;
+            background: transparent;
+        }
+        .collapse {
+            margin-right: 15px;
+            justify-content: end;
+            .navbar-nav {
+                margin-right: 10px;
+                column-gap: 80px;
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        margin-top: -7px;
+                        color: $firstColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                    .dropdown-toggle {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        color: $firstColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                }
+                #btnSubscribe {
+                    padding: 6px;
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-top: -4px;
+                    border-radius: 5px;
+                    color: $firstColor;
+                    background: transparent;
+                    border: 1px solid $firstColor;
+                    text-shadow: 1px 0px 3px $secondColor;
+                    &:hover {
+                        color: $secondColor;
+                        background: $firstColor;
+                    }
+                }
+            }
+        }
+    }
+    .containCharacters {
+        .meetCharacters {
+            margin: -120px auto;
+            .meet {
+                text-align: center;
+                font-size: 2.2em;
+                font-weight: bold;
+                color: $firstColor;
+                text-decoration: none;
+                text-shadow: 1px 3px 3px $secondColor;
+            }
+            .listBtnCharacters {
+                height: 50px;
+                margin: auto;
+                max-width: 850px;
+                @include flex (row);
+                .row {
+                    text-align: center;
+                    margin: auto;
+                    .col-lg-4 {
+                        .mainCharacters, .secondaryCharacters {
+                            top: 50%;
+                            left: 50%;
+                            position: relative;
+                            cursor: pointer;
+                            font-size: 1.3em;
+                            font-weight: bold;
+                            color: $firstColor;
+                            transition: all 0.25ms ease;
+                            transform: translate(-50%, -50%);
+                            text-shadow: 1px 2px 3px $secondColor;
+                        }
+                    }
+                }
+            }
+        }
+        .showCharacters {
+            margin: 150px auto;
+            .presentCharacters {
+                height: 450px;
+                overflow: auto;
+                .row {
+                    margin: auto;
+                    max-width: 1700px;
+                    .col-lg-4, .col-lg-3 {
+                        .img-fluid {
+                            margin-top: 20px;
+                            height: 380px;
+                            cursor: pointer;
+                            max-width: 600px;
+                            border-radius: 20px;
+                            border: 1px solid $firstColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        top: 96%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 50px; 
+        .copy {
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: bold;
+            color: $firstColor;
+            text-shadow: 1px 0px 3px $secondColor;
+        }
+    }
+}
+
 // SERIE TV
 #serieTv {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .navbar {
+        position: absolute;
+        top: -10%;
+        left: 0;
+        width: 100%;
+        position: relative;
+        @include flex (row);
+        .navbar-brand {
+            .img-fluid {
+                height: 300px;
+                max-width: 250px;
+            }
+        }
+        #btnBar {
+            display: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.4em;
+            color: $firstColor;
+            background: transparent;
+        }
+        .collapse {
+            margin-right: 15px;
+            justify-content: end;
+            .navbar-nav {
+                margin-right: 10px;
+                column-gap: 80px;
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        margin-top: -7px;
+                        color: $firstColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                    .dropdown-toggle {
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        color: $firstColor;
+                        text-decoration: none;
+                        text-shadow: 1px 0px 3px $secondColor;
+                    }
+                    #univers, #media {
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 300px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
+                    }
+                }
+                #btnSubscribe {
+                    padding: 6px;
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-top: -4px;
+                    border-radius: 5px;
+                    color: $firstColor;
+                    background: transparent;
+                    border: 1px solid $firstColor;
+                    text-shadow: 1px 0px 3px $secondColor;
+                    &:hover {
+                        color: $secondColor;
+                        background: $firstColor;
+                        text-shadow: 1px 0px 0px $secondColor;
+                    }
+                }
+            }
+        }
+    }
+    .containSerieTv {
+        top: 40%;
+        left: 20%;
+        max-width: 600px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        #serieTvLogo {
+            height: 250px;
+            max-width: 600px;
+        }
+        .pitch {
+            max-width: 850px;
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-top: -17px;
+            color: $firstColor;
+            text-shadow: 1px 0px 3px $secondColor;
+        }
+    }
+    .listEpisode {
+        #carouselListEpisodes {
+            top: 80%;
+            left: 50%;
+            padding: 20px;
+            max-width: 2200px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            .carousel-inner {
+                .carousel-item {
+                    .row {
+                        width: 1400px;
+                        .col-lg-4 {
+                            .img-fluid {
+                                height: 200px;
+                                cursor: pointer;
+                                max-width: 800px;
+                                border-radius: 20px;
+                                border: 1px solid $firstColor;
+                                &:hover {
+                                    opacity: 0.8;
+                                }
+                            }
+                            .nameEpisode {
+                                .title {
+                                    text-align: center;
+                                    font-size: 1.4em;
+                                    font-weight: bold;
+                                    color: $firstColor;
+                                    text-shadow: 1px 0px 3px $secondColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev {
+                margin-top: -20px;
+                margin-left: -120px;
+            }
+            .carousel-control-next {
+                margin-top: -20px;
+                margin-right: -120px;
+            }
+        }
+    }
+    .footer {
+        top: 97%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        .copy {
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: bold;
+            color: $firstColor;
+            text-shadow: 1px 0px 3px $secondColor;
+        }
+    }
+}
+
+// AMERICAN DREAM
+#americanDreams {
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -869,10 +1202,83 @@ $secondColor: black;
             }
         }
     }
-    .containSerieTv {
-        #serieTvLogo {
-            height: 300px;
-            max-width: 400px;
+    .containBd {
+        top: 20%;
+        left: 50%;
+        height: 700px;
+        max-width: 1600px;
+        position: relative;
+        transform: translate(-50%, -50%);
+        .row {
+            .col-lg-4 {
+                text-align: center;
+                .img-fluid {
+                    height: 650px;
+                    max-width: 460px;
+                    border-radius: 5px;
+                    border: 0px solid $firstColor;
+                }
+            }
+            .col-lg-8 {
+                margin: 100px auto;
+                .story {
+                    text-align: center;
+                    font-size: 1.4em;
+                    font-weight: bold;
+                    margin-top: -12px;
+                    line-height: 40px;
+                    color: $firstColor;
+                    text-shadow: 2px 2px 0px #000000, 5px 4px 0px rgba(0,0,0,0.15), 2px 2px 2px rgba(206,89,55,0);
+                }
+                .listPict {
+                    .row {
+                        margin: auto;
+                        max-width: 800px;
+                        .col-lg-3 {
+                            .img-fluid {
+                                height: 200px;
+                                max-width: 300px;
+                                cursor: pointer;
+                                opacity: 0.8;
+                                &:hover {
+                                    opacity: 1.0;
+                                }
+                            }
+                        }
+                    }
+                }
+                #btnBuy {
+                    display: block;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    margin: 30px auto;
+                    border-radius: 5px;
+                    color: $firstColor;
+                    background: transparent;
+                    border: 1px solid $firstColor;
+                    &:hover {
+                        color: $secondColor;
+                        background: $firstColor;
+                        text-shadow: 1px 0px 0px $secondColor;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        top: 97%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        .copy {
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: bold;
+            color: $firstColor;
+            text-shadow: 1px 0px 3px $secondColor;
         }
     }
 }

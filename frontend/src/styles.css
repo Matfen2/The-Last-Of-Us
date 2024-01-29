@@ -84,6 +84,11 @@ body {
   border: 1px solid azure;
   text-shadow: 1px 0px 3px black;
 }
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav #btnSubscribe:hover {
+  color: black;
+  background: azure;
+  text-shadow: 1px 0px 0px black;
+}
 #main #carouselTlou .carousel-inner .carousel-item .containTlou .moreInfo {
   top: 85%;
   left: 50%;
@@ -256,6 +261,7 @@ body {
 #suscribe .containSuscribe form .row .col-lg-4 #btnSuscribe:hover {
   color: black;
   background: azure;
+  text-shadow: 1px 0px 0px black;
 }
 
 #tlou .show {
@@ -333,6 +339,11 @@ body {
   background: transparent;
   border: 1px solid azure;
   text-shadow: 1px 0px 3px black;
+}
+#tlou .show .navbar .collapse .navbar-nav #btnSuscribe:hover {
+  color: black;
+  background: azure;
+  text-shadow: 1px 0px 0px black;
 }
 #tlou .show .logo {
   max-width: 600px;
@@ -513,6 +524,10 @@ body {
   border: 1px solid azure;
   text-shadow: 1px 0px 3px black;
 }
+#infectes .navbar .collapse .navbar-nav #btnSubscribe:hover {
+  color: black;
+  background: azure;
+}
 #infectes .containInfectes {
   height: 350px;
   margin: -180px auto;
@@ -649,6 +664,11 @@ body {
   border: 1px solid azure;
   text-shadow: 1px 0px 3px black;
 }
+#factions .navbar .collapse .navbar-nav #btnSubscribe:hover {
+  color: black;
+  background: azure;
+  text-shadow: 1px 0px 0px black;
+}
 #factions .containFactions {
   top: 55%;
   left: 50%;
@@ -734,6 +754,144 @@ body {
   text-shadow: 1px 0px 3px black;
 }
 
+#characters {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#characters .navbar {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#characters .navbar .navbar-brand .img-fluid {
+  height: 300px;
+  max-width: 250px;
+}
+#characters .navbar #btnBar {
+  display: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4em;
+  color: azure;
+  background: transparent;
+}
+#characters .navbar .collapse {
+  margin-right: 15px;
+  justify-content: end;
+}
+#characters .navbar .collapse .navbar-nav {
+  margin-right: 10px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+#characters .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#characters .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#characters .navbar .collapse .navbar-nav #btnSubscribe {
+  padding: 6px;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -4px;
+  border-radius: 5px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+  text-shadow: 1px 0px 3px black;
+}
+#characters .navbar .collapse .navbar-nav #btnSubscribe:hover {
+  color: black;
+  background: azure;
+}
+#characters .containCharacters .meetCharacters {
+  margin: -120px auto;
+}
+#characters .containCharacters .meetCharacters .meet {
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 3px 3px black;
+}
+#characters .containCharacters .meetCharacters .listBtnCharacters {
+  height: 50px;
+  margin: auto;
+  max-width: 850px;
+  display: flex;
+  flex-direction: row;
+}
+#characters .containCharacters .meetCharacters .listBtnCharacters .row {
+  text-align: center;
+  margin: auto;
+}
+#characters .containCharacters .meetCharacters .listBtnCharacters .row .col-lg-4 .mainCharacters, #characters .containCharacters .meetCharacters .listBtnCharacters .row .col-lg-4 .secondaryCharacters {
+  top: 50%;
+  left: 50%;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: azure;
+  transition: all 0.25ms ease;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 2px 3px black;
+}
+#characters .containCharacters .showCharacters {
+  margin: 150px auto;
+}
+#characters .containCharacters .showCharacters .presentCharacters {
+  height: 450px;
+  overflow: auto;
+}
+#characters .containCharacters .showCharacters .presentCharacters .row {
+  margin: auto;
+  max-width: 1700px;
+}
+#characters .containCharacters .showCharacters .presentCharacters .row .col-lg-4 .img-fluid, #characters .containCharacters .showCharacters .presentCharacters .row .col-lg-3 .img-fluid {
+  margin-top: 20px;
+  height: 380px;
+  cursor: pointer;
+  max-width: 600px;
+  border-radius: 20px;
+  border: 1px solid azure;
+}
+#characters .footer {
+  top: 96%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+#characters .footer .copy {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  text-shadow: 1px 0px 3px black;
+}
+
 #serieTv {
   width: 100%;
   height: 100vh;
@@ -808,9 +966,230 @@ body {
   border: 1px solid azure;
   text-shadow: 1px 0px 3px black;
 }
+#serieTv .navbar .collapse .navbar-nav #btnSubscribe:hover {
+  color: black;
+  background: azure;
+  text-shadow: 1px 0px 0px black;
+}
+#serieTv .containSerieTv {
+  top: 40%;
+  left: 20%;
+  max-width: 600px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
 #serieTv .containSerieTv #serieTvLogo {
+  height: 250px;
+  max-width: 600px;
+}
+#serieTv .containSerieTv .pitch {
+  max-width: 850px;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -17px;
+  color: azure;
+  text-shadow: 1px 0px 3px black;
+}
+#serieTv .listEpisode #carouselListEpisodes {
+  top: 80%;
+  left: 50%;
+  padding: 20px;
+  max-width: 2200px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row {
+  width: 1400px;
+}
+#serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row .col-lg-4 .img-fluid {
+  height: 200px;
+  cursor: pointer;
+  max-width: 800px;
+  border-radius: 20px;
+  border: 1px solid azure;
+}
+#serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row .col-lg-4 .img-fluid:hover {
+  opacity: 0.8;
+}
+#serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row .col-lg-4 .nameEpisode .title {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  text-shadow: 1px 0px 3px black;
+}
+#serieTv .listEpisode #carouselListEpisodes .carousel-control-prev {
+  margin-top: -20px;
+  margin-left: -120px;
+}
+#serieTv .listEpisode #carouselListEpisodes .carousel-control-next {
+  margin-top: -20px;
+  margin-right: -120px;
+}
+#serieTv .footer {
+  top: 97%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#serieTv .footer .copy {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  text-shadow: 1px 0px 3px black;
+}
+
+#americanDreams {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#americanDreams .navbar {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#americanDreams .navbar .navbar-brand .img-fluid {
   height: 300px;
-  max-width: 400px;
+  max-width: 250px;
+}
+#americanDreams .navbar #btnBar {
+  display: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4em;
+  color: azure;
+  background: transparent;
+}
+#americanDreams .navbar .collapse {
+  margin-right: 15px;
+  justify-content: end;
+}
+#americanDreams .navbar .collapse .navbar-nav {
+  margin-right: 10px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+#americanDreams .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#americanDreams .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  text-decoration: none;
+  text-shadow: 1px 0px 3px black;
+}
+#americanDreams .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item, #americanDreams .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 300px;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#americanDreams .navbar .collapse .navbar-nav #btnSubscribe {
+  padding: 6px;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -4px;
+  border-radius: 5px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+  text-shadow: 1px 0px 3px black;
+}
+#americanDreams .containBd {
+  top: 20%;
+  left: 50%;
+  height: 700px;
+  max-width: 1600px;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+#americanDreams .containBd .row .col-lg-4 {
+  text-align: center;
+}
+#americanDreams .containBd .row .col-lg-4 .img-fluid {
+  height: 650px;
+  max-width: 460px;
+  border-radius: 5px;
+  border: 0px solid azure;
+}
+#americanDreams .containBd .row .col-lg-8 {
+  margin: 100px auto;
+}
+#americanDreams .containBd .row .col-lg-8 .story {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -12px;
+  line-height: 40px;
+  color: azure;
+  text-shadow: 2px 2px 0px #000000, 5px 4px 0px rgba(0, 0, 0, 0.15), 2px 2px 2px rgba(206, 89, 55, 0);
+}
+#americanDreams .containBd .row .col-lg-8 .listPict .row {
+  margin: auto;
+  max-width: 800px;
+}
+#americanDreams .containBd .row .col-lg-8 .listPict .row .col-lg-3 .img-fluid {
+  height: 200px;
+  max-width: 300px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+#americanDreams .containBd .row .col-lg-8 .listPict .row .col-lg-3 .img-fluid:hover {
+  opacity: 1;
+}
+#americanDreams .containBd .row .col-lg-8 #btnBuy {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 30px auto;
+  border-radius: 5px;
+  color: azure;
+  background: transparent;
+  border: 1px solid azure;
+}
+#americanDreams .containBd .row .col-lg-8 #btnBuy:hover {
+  color: black;
+  background: azure;
+  text-shadow: 1px 0px 0px black;
+}
+#americanDreams .footer {
+  top: 97%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#americanDreams .footer .copy {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: azure;
+  text-shadow: 1px 0px 3px black;
 }
 
 @media screen and (max-width: 1024px) {

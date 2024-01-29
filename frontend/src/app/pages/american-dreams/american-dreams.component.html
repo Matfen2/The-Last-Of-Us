@@ -1,1 +1,53 @@
-<p>american-dreams works!</p>
+<section id="americanDreams" style="background-image: url('/assets/pict/media/bd/theLastOfUsAmericanDreamsPage.png');">
+    <div class="navbar navbar-expand">
+        <div class="navbar-brand">
+            <img src="/assets/pict/main/theLastOfUsLogo.png" [routerLink]="'/main'" class="img-fluid w-100" alt="tlouLogo" />
+        </div>
+        <button id="btnBar" type="button" data-bs-toggle="offcanvas" data-bs-target="#showLigth" aria-controls="showLigth"><i class="fas fa-bars"></i></button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#univers">UNIVERS</a>
+                    <div class="dropdown-menu" id="univers">
+                        <a href="#" class="dropdown-item" [routerLink]="'/factions'">FACTIONS</a>
+                        <a href="#" class="dropdown-item" [routerLink]="'/infectes'">INFECTES</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link" [routerLink]="'/characters'">PERSONNAGES</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#media">MEDIA</a>
+                    <div class="dropdown-menu" id="media">
+                        <a href="#" class="dropdown-item" [routerLink]="'/serieTv'">SERIE TV</a>
+                        <a href="#" class="dropdown-item" [routerLink]="'/americanDreams'">AMERICAN DREAMS</a>
+                    </div>
+                </li>
+            <button type="button" id="btnSubscribe" [routerLink]="'/subscribe'">ABONNEMENT</button>
+            </ul>
+        </div>
+    </div>
+
+    <div class="containBd">
+        <div class="row">
+            <div class="col-lg-4">
+                <img [src]="selectedImage || '/assets/pict/media/bd/theLastOfUsAmericanDreams.jpg'" class="img-fluid w-100" alt="background" />
+            </div>
+            <div class="col-lg-8">
+                <p class="story">« Dans un monde ravagé et décimé par une maladie faisant des humains de véritables morts-vivants sanguinaires, la jeune Ellie tente de survivre comme elle peut. Elle intègre la zone de quarantaine avec d’autres survivants, dont Riley qui va rapidement devenir son amie. Mais l’ambiance n’est pas à la fête car hors de la zone veillent les Lucioles, un groupe de rebelles qui semble sans foi ni loi et qui remet en cause les décisions du gouvernement. Pourtant, les Lucioles fascinent Riley et cette dernière n’a qu’une envie... les rejoindre ! »</p>
+                <div class="listPict">
+                    <div class="row">
+                        <div class="col-lg-3" *ngFor="let page of pages">
+                            <img [src]="page.pict" class="img-fluid w-100" (click)="onSelectImage(page.pict)" alt="page" />
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="btnBuy">ACHETER</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="copy">© The Last Of Us 2024</p>
+    </div>
+
+    <app-show-ligth></app-show-ligth>
+</section>

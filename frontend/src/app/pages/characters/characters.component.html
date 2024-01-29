@@ -1,1 +1,67 @@
-<p>characters works!</p>
+<section id="characters" style="background-image: url('/assets/pict/characters/theLastOfUsCharactersPage.jpg');">
+    <div class="navbar navbar-expand">
+        <div class="navbar-brand">
+            <img src="/assets/pict/main/theLastOfUsLogo.png" [routerLink]="'/main'" class="img-fluid w-100" alt="tlouLogo" />
+        </div>
+        <button id="btnBar" type="button" data-bs-toggle="offcanvas" data-bs-target="#showLigth" aria-controls="showLigth"><i class="fas fa-bars"></i></button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#univers">UNIVERS</a>
+                    <div class="dropdown-menu" id="univers">
+                        <a href="#" class="dropdown-item" [routerLink]="'/factions'">FACTIONS</a>
+                        <a href="#" class="dropdown-item" [routerLink]="'/infectes'">INFECTES</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link" [routerLink]="'/characters'">PERSONNAGES</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#media">MEDIA</a>
+                    <div class="dropdown-menu" id="media">
+                        <a href="#" class="dropdown-item" [routerLink]="'/serieTv'">SERIE TV</a>
+                        <a href="#" class="dropdown-item" [routerLink]="'/americanDreams'">AMERICAN DREAMS</a>
+                    </div>
+                </li>
+            <button type="button" id="btnSubscribe" [routerLink]="'/subscribe'">ABONNEMENT</button>
+            </ul>
+        </div>
+    </div>
+    <div class="containCharacters">
+        <div class="meetCharacters">
+            <h2 class="meet">RENCONTREZ DES PERSONNAGES :</h2>
+            <div class="listBtnCharacters">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p class="mainCharacters" (click)="showCharacters('main')">PRINCIPALS</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="secondaryCharacters" (click)="showCharacters('secondaryPart1')">SECONDAIRES (PART 1)</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="secondaryCharacters" (click)="showCharacters('secondaryPart2')">SECONDAIRES (PART 2)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showCharacters" [ngSwitch]="present">
+            <div class="presentCharacters" *ngSwitchCase="'main'">
+                <div class="row">
+                    <div class="col-lg-4" *ngFor="let main of mains">
+                        <img [src]="main.pictOne" class="img-fluid w-100" />
+                    </div>
+                </div>
+            </div>
+            <div class="presentCharacters" *ngSwitchCase="'secondaryPart1'">
+                <div class="row">
+                    <div class="col-lg-3" *ngFor="let secondaryPartOne of secondarysPart1">
+                        <img [src]="secondaryPartOne.pictOne" class="img-fluid w-100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="copy">© The Last Of Us 2024</p>
+    </div>
+
+    <app-show-ligth></app-show-ligth>
+</section>
