@@ -512,6 +512,16 @@ body {
   text-decoration: none;
   text-shadow: 1px 0px 3px black;
 }
+#infectes .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item, #infectes .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 300px;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
 #infectes .navbar .collapse .navbar-nav #btnSubscribe {
   padding: 6px;
   font-size: 1.4em;
@@ -651,6 +661,16 @@ body {
   color: azure;
   text-decoration: none;
   text-shadow: 1px 0px 3px black;
+}
+#factions .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item, #factions .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 300px;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
 }
 #factions .navbar .collapse .navbar-nav #btnSubscribe {
   padding: 6px;
@@ -821,8 +841,11 @@ body {
   color: black;
   background: azure;
 }
+#characters .containCharacters {
+  margin: -100px auto;
+}
 #characters .containCharacters .meetCharacters {
-  margin: -120px auto;
+  margin: 0px auto;
 }
 #characters .containCharacters .meetCharacters .meet {
   text-align: center;
@@ -856,7 +879,7 @@ body {
   text-shadow: 1px 2px 3px black;
 }
 #characters .containCharacters .showCharacters {
-  margin: 150px auto;
+  margin: 10px auto;
 }
 #characters .containCharacters .showCharacters .presentCharacters {
   height: 400px;
@@ -947,6 +970,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url("/assets/pict/media/serieTV/theLastOfUsSerie.jpg");
 }
 #serieTv .navbar {
   position: absolute;
@@ -1181,17 +1205,25 @@ body {
 #americanDreams .containBd .row .col-lg-4 .img-fluid {
   height: 650px;
   max-width: 460px;
+  cursor: pointer;
   border-radius: 5px;
   border: 0px solid azure;
+  transition: all 0.25ms ease;
+}
+#americanDreams .containBd .row .col-lg-4 .img-fluid:hover {
+  transform: scale(1.1);
 }
 #americanDreams .containBd .row .col-lg-8 {
-  margin: 100px auto;
+  margin: 55px auto;
+  border-radius: 20px;
+  background: black;
+  border: 1px solid azure;
 }
 #americanDreams .containBd .row .col-lg-8 .story {
   text-align: center;
   font-size: 1.4em;
   font-weight: bold;
-  margin-top: -12px;
+  margin-top: 10px;
   line-height: 40px;
   color: azure;
   text-shadow: 2px 2px 0px #000000, 5px 4px 0px rgba(0, 0, 0, 0.15), 2px 2px 2px rgba(206, 89, 55, 0);
@@ -1213,7 +1245,7 @@ body {
   display: block;
   font-size: 1.2em;
   font-weight: bold;
-  margin: 30px auto;
+  margin: 27px auto;
   border-radius: 5px;
   color: azure;
   background: transparent;
@@ -1241,6 +1273,33 @@ body {
   text-shadow: 1px 0px 3px black;
 }
 
+@media screen and (max-width: 1440px) {
+  #serieTv {
+    height: 100vh;
+  }
+  #serieTv .navbar .collapse {
+    margin-right: 35px;
+  }
+  #serieTv .containSerieTv {
+    left: 25%;
+  }
+  #serieTv .containSerieTv #serieTvLogo {
+    height: 220px;
+  }
+  #serieTv .listEpisode #carouselListEpisodes {
+    max-width: 1600px;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row {
+    width: 1200px;
+  }
+  #americanDreams .containBd .row .col-lg-8 {
+    margin: 45px auto;
+    max-width: 900px;
+  }
+  #americanDreams .containBd .row .col-lg-8 .listPict .row {
+    max-width: 600px;
+  }
+}
 @media screen and (max-width: 1024px) {
   #main #carouselTlou .carousel-inner .carousel-item .d-block {
     max-width: 100%;
@@ -1285,6 +1344,74 @@ body {
   #infectes .containInfectes #btnVideo {
     margin: 15px auto;
   }
+  #characters .containCharacters .showCharacters .presentCharacters {
+    height: 460px;
+    overflow: auto;
+    margin-top: 20px;
+  }
+  #characters .containCharacters .showCharacters .presentCharacters .row .col-lg-3 {
+    margin: auto;
+    width: 600px;
+  }
+  #characters .containCharacters .showCharacters .presentCharacters .row .col-lg-3 .img-fluid {
+    height: 420px;
+  }
+  #characters .containCharacters .showCharacters .presentCharacters .row .col-lg-4 {
+    width: 600px;
+  }
+  #characters .containCharacters .showCharacters .presentCharacters .row .col-lg-4 .img-fluid {
+    height: 420px;
+  }
+  #characters .modal #btnCloseModal {
+    left: 97%;
+  }
+  #serieTv {
+    height: 100vh;
+    background-image: url("/assets/pict/media/serieTV/theLastOfUsSeriePortable.jpg");
+  }
+  #serieTv .navbar .collapse {
+    margin-right: 35px;
+  }
+  #serieTv .containSerieTv {
+    top: 65%;
+    left: 50%;
+    max-width: 460px;
+  }
+  #serieTv .containSerieTv #serieTvLogo {
+    height: 160px;
+  }
+  #serieTv .containSerieTv .pitch {
+    display: none;
+  }
+  #serieTv .listEpisode #carouselListEpisodes {
+    top: 84%;
+    max-width: 1600px;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row {
+    height: 190px;
+    width: 770px;
+    overflow: auto;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row .col-lg-4 .img-fluid {
+    height: 150px;
+  }
+  #americanDreams .containBd .row .col-lg-4 .img-fluid {
+    height: 600px;
+    max-width: 300px;
+    margin-right: -30px;
+    margin-top: 20px;
+  }
+  #americanDreams .containBd .row .col-lg-8 {
+    margin: -2px auto;
+    max-width: 620px;
+  }
+  #americanDreams .containBd .row .col-lg-8 .story {
+    line-height: 33px;
+  }
+  #americanDreams .containBd .row .col-lg-8 .listPict .row {
+    margin: 30px auto;
+    max-width: 600px;
+  }
 }
 @media screen and (max-width: 970px) {
   #main #carouselTlou .carousel-inner .carousel-item .d-block {
@@ -1321,6 +1448,39 @@ body {
     position: absolute;
   }
   #infectes .navbar .collapse .navbar-nav {
+    display: none;
+  }
+  #characters .navbar {
+    justify-content: space-between;
+  }
+  #characters .navbar #btnBar {
+    right: 2%;
+    display: block;
+    position: absolute;
+  }
+  #characters .navbar .collapse .navbar-nav {
+    display: none;
+  }
+  #serieTv .navbar {
+    justify-content: space-between;
+  }
+  #serieTv .navbar #btnBar {
+    right: 2%;
+    display: block;
+    position: absolute;
+  }
+  #serieTv .navbar .collapse .navbar-nav {
+    display: none;
+  }
+  #americanDreams .navbar {
+    justify-content: space-between;
+  }
+  #americanDreams .navbar #btnBar {
+    right: 2%;
+    display: block;
+    position: absolute;
+  }
+  #americanDreams .navbar .collapse .navbar-nav {
     display: none;
   }
 }
@@ -1429,6 +1589,81 @@ body {
   #infectes .containInfectes #btnVideo {
     margin: -55px auto;
   }
+  #characters .modal #btnCloseModal {
+    left: 95%;
+  }
+  #characters .modal .modal-dialog {
+    max-width: 700px;
+  }
+  #serieTv .containSerieTv {
+    top: 10%;
+    left: 50%;
+    max-width: 460px;
+  }
+  #serieTv .containSerieTv #serieTvLogo {
+    height: 140px;
+  }
+  #serieTv .containSerieTv .pitch {
+    display: none;
+  }
+  #serieTv .listEpisode #carouselListEpisodes {
+    top: 78%;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row {
+    height: 290px;
+    width: 560px;
+    overflow: auto;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row .col-lg-4 .img-fluid {
+    display: block;
+    height: 250px;
+    max-width: 420px;
+    margin: auto;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-control-prev {
+    height: 50px;
+    max-width: 60px;
+    margin-top: 120px;
+    margin-left: 50px;
+    color: azure;
+    border-radius: 50%;
+    background: black;
+    border: 1px solid azure;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-control-next {
+    height: 50px;
+    max-width: 60px;
+    margin-top: 120px;
+    margin-right: 50px;
+    color: azure;
+    border-radius: 50%;
+    background: black;
+    border: 1px solid azure;
+  }
+  #americanDreams .containBd {
+    top: -11%;
+    height: 100px;
+    max-width: 600px;
+  }
+  #americanDreams .containBd .row {
+    height: 600px;
+    overflow: auto;
+  }
+  #americanDreams .containBd .row .col-lg-4 .img-fluid {
+    height: 600px;
+    max-width: 450px;
+  }
+  #americanDreams .containBd .row .col-lg-8 {
+    margin: 25px auto;
+  }
+  #americanDreams .containBd .row .col-lg-8 .listPict .row {
+    text-align: center;
+    height: 300px;
+    overflow: auto;
+  }
+  #americanDreams .containBd .row .col-lg-8 .listPict .row .col-lg-3 .img-fluid {
+    height: 300px;
+  }
 }
 @media screen and (max-width: 425px) {
   #main #carouselTlou .carousel-inner .carousel-item .d-block {
@@ -1533,14 +1768,137 @@ body {
   #infectes .footer .copy {
     font-size: 1.2em;
   }
+  #characters .containCharacters {
+    margin: -180px auto;
+  }
+  #characters .containCharacters .meetCharacters .listBtnCharacters .row {
+    margin: -10px auto;
+    overflow: auto;
+    height: 88px;
+  }
+  #characters .containCharacters .showCharacters {
+    margin: 40px auto;
+  }
+  #characters .containCharacters .showCharacters .presentCharacters {
+    height: 450px;
+  }
+  #characters .containCharacters .showCharacters .presentCharacters .row .col-lg-3 {
+    margin: auto;
+    width: 600px;
+  }
+  #characters .containCharacters .showCharacters .presentCharacters .row .col-lg-3 .img-fluid {
+    height: 420px;
+  }
+  #characters .containCharacters .showCharacters .presentCharacters .row .col-lg-4 {
+    width: 600px;
+  }
+  #characters .containCharacters .showCharacters .presentCharacters .row .col-lg-4 .img-fluid {
+    height: 420px;
+  }
+  #characters .modal #btnCloseModal {
+    left: 93%;
+  }
+  #characters .modal .modal-dialog {
+    max-width: 600px;
+  }
+  #characters .modal .modal-dialog .modal-content .modal-body {
+    height: 380px;
+    overflow: auto;
+  }
+  #characters .modal .modal-dialog .modal-content .modal-body .img-fluid {
+    height: 300px;
+  }
+  #characters .footer .copy {
+    font-size: 1.2em;
+  }
+  #serieTv .navbar #btnBar {
+    margin-right: 5px;
+  }
+  #serieTv .containSerieTv {
+    top: 64%;
+    width: 350px;
+  }
+  #serieTv .containSerieTv #serieTvLogo {
+    height: 140px;
+  }
+  #serieTv .listEpisode #carouselListEpisodes {
+    top: 82%;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row {
+    height: 200px;
+    width: 360px;
+    overflow: auto;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row .col-lg-4 .img-fluid {
+    display: block;
+    height: 170px;
+    max-width: 420px;
+    margin: auto;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-control-prev {
+    height: 50px;
+    max-width: 60px;
+    margin-top: 82px;
+    margin-left: -10px;
+    color: azure;
+    border-radius: 50%;
+    background: black;
+    border: 1px solid azure;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-control-next {
+    height: 50px;
+    max-width: 60px;
+    margin-top: 82px;
+    margin-right: -10px;
+    color: azure;
+    border-radius: 50%;
+    background: black;
+    border: 1px solid azure;
+  }
+  #serieTv .footer {
+    top: 98%;
+  }
+  #serieTv .footer .copy {
+    font-size: 1.2em;
+  }
+  #americanDreams .containBd {
+    top: -14%;
+    height: 100px;
+    max-width: 340px;
+  }
+  #americanDreams .containBd .row {
+    height: 640px;
+    overflow: auto;
+  }
+  #americanDreams .containBd .row .col-lg-4 .img-fluid {
+    height: 640px;
+    max-width: 370px;
+    margin-left: -18px;
+  }
+  #americanDreams .containBd .row .col-lg-8 {
+    margin: 25px auto;
+  }
+  #americanDreams .containBd .row .col-lg-8 .listPict .row {
+    text-align: center;
+    height: 300px;
+    overflow: auto;
+  }
+  #americanDreams .containBd .row .col-lg-8 .listPict .row .col-lg-3 .img-fluid {
+    height: 300px;
+  }
+  #americanDreams .footer {
+    top: 98%;
+  }
+  #americanDreams .footer .copy {
+    font-size: 1.2em;
+  }
 }
 @media screen and (max-width: 375px) {
   #main #carouselTlou .carousel-inner .carousel-item .d-block {
     max-width: 100%;
   }
   #main #carouselTlou .carousel-inner .carousel-item .containTlou .footer .copy {
-    width: 200px;
-    font-size: 1.2em;
+    width: 260px;
   }
   #tlou .show .logo {
     max-width: 400px;
@@ -1634,7 +1992,61 @@ body {
     margin: -105px auto;
   }
   #infectes .footer .copy {
-    font-size: 1.2em;
+    width: 260px;
+  }
+  #characters .footer .copy {
+    width: 260px;
+  }
+  #serieTv .listEpisode #carouselListEpisodes {
+    top: 82%;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row {
+    height: 200px;
+    width: 260px;
+    overflow: auto;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row .col-lg-4 .img-fluid {
+    display: block;
+    height: 170px;
+    max-width: 460px;
+    margin: auto;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-control-prev {
+    margin-left: -2px;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-control-next {
+    margin-right: -2px;
+  }
+  #serieTv .footer .copy {
+    width: 260px;
+  }
+  #americanDreams .containBd {
+    top: -14%;
+    height: 100px;
+    max-width: 320px;
+  }
+  #americanDreams .containBd .row {
+    height: 680px;
+    overflow: auto;
+  }
+  #americanDreams .containBd .row .col-lg-4 .img-fluid {
+    height: 670px;
+    max-width: 370px;
+    margin-left: -18px;
+  }
+  #americanDreams .containBd .row .col-lg-8 {
+    margin: 25px auto;
+  }
+  #americanDreams .containBd .row .col-lg-8 .listPict .row {
+    text-align: center;
+    height: 300px;
+    overflow: auto;
+  }
+  #americanDreams .containBd .row .col-lg-8 .listPict .row .col-lg-3 .img-fluid {
+    height: 300px;
+  }
+  #americanDreams .footer .copy {
+    width: 260px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1701,5 +2113,64 @@ body {
     margin-bottom: -20px;
     height: 500px;
     max-width: 350px;
+  }
+  #serieTv .containSerieTv {
+    top: 67%;
+    left: 50%;
+    max-width: 260px;
+  }
+  #serieTv .containSerieTv #serieTvLogo {
+    height: 140px;
+  }
+  #serieTv .containSerieTv .pitch {
+    display: none;
+  }
+  #serieTv .listEpisode #carouselListEpisodes {
+    top: 84%;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row {
+    height: 170px;
+    width: 260px;
+    overflow: auto;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row .col-lg-4 .img-fluid {
+    display: block;
+    height: 170px;
+    max-width: 220px;
+    margin: auto;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-control-prev {
+    margin-left: 6px;
+  }
+  #serieTv .listEpisode #carouselListEpisodes .carousel-control-next {
+    margin-right: 6px;
+  }
+  #americanDreams .containBd {
+    top: -14%;
+    height: 100px;
+    max-width: 270px;
+  }
+  #americanDreams .containBd .row {
+    height: 680px;
+    overflow: auto;
+  }
+  #americanDreams .containBd .row .col-lg-4 .img-fluid {
+    height: 670px;
+    max-width: 370px;
+    margin-left: -24px;
+  }
+  #americanDreams .containBd .row .col-lg-8 {
+    margin: 25px auto;
+  }
+  #americanDreams .containBd .row .col-lg-8 .listPict .row {
+    text-align: center;
+    height: 300px;
+    overflow: auto;
+  }
+  #americanDreams .containBd .row .col-lg-8 .listPict .row .col-lg-3 .img-fluid {
+    height: 300px;
+  }
+  #americanDreams .footer .copy {
+    width: 260px;
   }
 }/*# sourceMappingURL=styles.css.map */
