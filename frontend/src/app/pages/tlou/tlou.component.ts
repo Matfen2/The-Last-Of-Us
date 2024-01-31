@@ -16,7 +16,7 @@ export class TlouComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    this.isSmallScreen = window.innerWidth < 426;
+    this.isSmallScreen = window.innerWidth < 728;
   }
 
   players: string = '';

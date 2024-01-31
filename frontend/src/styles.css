@@ -52,21 +52,41 @@ body {
   font-weight: bold;
   margin-top: -7px;
   color: azure;
+  letter-spacing: 5px;
   text-decoration: none;
   text-shadow: 1px 0px 3px black;
 }
 #main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
   text-shadow: 1px 0px 3px black;
 }
-#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item, #main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav .nav-item #univers {
+  height: 80px;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item {
   overflow: auto;
   max-width: 300px;
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav .nav-item #media {
+  height: 80px;
+}
+#main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 320px;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 5px;
   margin-top: -7px;
   color: black;
   text-decoration: none;
@@ -79,6 +99,7 @@ body {
   cursor: pointer;
   margin-top: -4px;
   border-radius: 5px;
+  letter-spacing: 5px;
   color: azure;
   background: transparent;
   border: 1px solid azure;
@@ -90,7 +111,7 @@ body {
   text-shadow: 1px 0px 0px black;
 }
 #main #carouselTlou .carousel-inner .carousel-item .containTlou .moreInfo {
-  top: 85%;
+  top: 88%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -101,6 +122,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-top: -4px;
+  letter-spacing: 3px;
   border-radius: 5px;
   color: azure;
   background: transparent;
@@ -125,6 +147,7 @@ body {
 #main #carouselTlou .carousel-inner .carousel-item .containTlou .footer .copy {
   text-align: center;
   font-size: 1.4em;
+  letter-spacing: 3px;
   font-weight: bold;
   color: azure;
   text-shadow: 1px 0px 3px black;
@@ -163,6 +186,7 @@ body {
   font-size: 1.4em;
   font-weight: bold;
   margin-top: -7px;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
   text-shadow: 1px 0px 3px black;
@@ -196,12 +220,13 @@ body {
 #showLigth .offcanvas-body .navbar-nav #btnSubscribe {
   display: block;
   padding: 6px;
-  max-width: 180px;
+  max-width: 240px;
   font-size: 1.4em;
   font-weight: bold;
   cursor: pointer;
   margin: 7px auto;
-  margin-right: 55px;
+  letter-spacing: 5px;
+  margin-right: 25px;
   border-radius: 5px;
   color: azure;
   background: transparent;
@@ -304,43 +329,61 @@ body {
   font-size: 1.4em;
   font-weight: bold;
   margin-top: -7px;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #tlou .show .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
-#tlou .show .navbar .collapse .navbar-nav .nav-item #univers, #tlou .show .navbar .collapse .navbar-nav .nav-item #media {
+#tlou .show .navbar .collapse .navbar-nav .nav-item #univers {
   height: 80px;
 }
-#tlou .show .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item, #tlou .show .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+#tlou .show .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item {
   overflow: auto;
   max-width: 300px;
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
   margin-top: -7px;
   color: black;
   text-decoration: none;
   text-shadow: 1px 0px 0px black;
 }
-#tlou .show .navbar .collapse .navbar-nav #btnSuscribe {
+#tlou .show .navbar .collapse .navbar-nav .nav-item #media {
+  height: 80px;
+}
+#tlou .show .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 320px;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#tlou .show .navbar .collapse .navbar-nav #btnSubscribe {
   padding: 6px;
   font-size: 1.4em;
   font-weight: bold;
   cursor: pointer;
   margin-top: -4px;
+  letter-spacing: 5px;
   border-radius: 5px;
   color: azure;
   background: transparent;
   border: 1px solid azure;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
-#tlou .show .navbar .collapse .navbar-nav #btnSuscribe:hover {
+#tlou .show .navbar .collapse .navbar-nav #btnSubscribe:hover {
   color: black;
   background: azure;
   text-shadow: 1px 0px 0px black;
@@ -361,13 +404,20 @@ body {
   margin: -22px auto;
   display: block;
   width: 100%;
+  font-weight: bold;
   cursor: pointer;
-  max-width: 100px;
+  max-width: 140px;
   font-size: 1.2em;
+  letter-spacing: 5px;
   color: azure;
   border-radius: 3px;
   background: transparent;
   border: 1px solid azure;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
+}
+#tlou .show .logo #btnBuy:hover {
+  color: black;
+  background: azure;
 }
 #tlou .show .pitch {
   margin: 150px auto;
@@ -376,10 +426,12 @@ body {
   max-width: 1200px;
 }
 #tlou .show .pitch .sentence {
+  letter-spacing: 5px;
   text-align: center;
   font-size: 1.4em;
+  font-weight: bold;
   color: azure;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #tlou .experience {
   height: 425px;
@@ -392,7 +444,8 @@ body {
   margin: 10px auto;
   text-align: center;
   color: azure;
-  text-shadow: 1px 0px 3px black;
+  letter-spacing: 5px;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #tlou .experience .row {
   padding: 10px;
@@ -410,7 +463,10 @@ body {
 }
 #tlou .experience .row .col-lg-4 .slogan .sentenceLive {
   font-size: 1.2em;
+  letter-spacing: 5px;
   color: azure;
+  font-weight: bold;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #tlou .media {
   height: 880px;
@@ -456,6 +512,7 @@ body {
 #tlou .media .footer .copy {
   text-align: center;
   font-size: 1.4em;
+  letter-spacing: 5px;
   font-weight: bold;
   color: azure;
   text-shadow: 1px 0px 3px black;
@@ -501,22 +558,42 @@ body {
   font-size: 1.4em;
   font-weight: bold;
   margin-top: -7px;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #infectes .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
-#infectes .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item, #infectes .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+#infectes .navbar .collapse .navbar-nav .nav-item #univers {
+  height: 80px;
+}
+#infectes .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item {
   overflow: auto;
   max-width: 300px;
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#infectes .navbar .collapse .navbar-nav .nav-item #media {
+  height: 80px;
+}
+#infectes .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 320px;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 5px;
   margin-top: -7px;
   color: black;
   text-decoration: none;
@@ -528,15 +605,17 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-top: -4px;
+  letter-spacing: 5px;
   border-radius: 5px;
   color: azure;
   background: transparent;
   border: 1px solid azure;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #infectes .navbar .collapse .navbar-nav #btnSubscribe:hover {
   color: black;
   background: azure;
+  text-shadow: 1px 0px 0px black;
 }
 #infectes .containInfectes {
   height: 350px;
@@ -547,6 +626,7 @@ body {
   font-size: 2em;
   font-weight: bold;
   color: azure;
+  letter-spacing: 5px;
   text-shadow: 1px 0px 3px black;
 }
 #infectes .containInfectes .people .row {
@@ -568,6 +648,7 @@ body {
   font-size: 1.7em;
   font-weight: bold;
   color: azure;
+  letter-spacing: 5px;
   text-shadow: 1px 0px 3px black;
 }
 #infectes .containInfectes #btnVideo {
@@ -576,6 +657,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   display: block;
+  letter-spacing: 5px;
   margin: -35px auto;
   border-radius: 5px;
   color: azure;
@@ -607,6 +689,7 @@ body {
   text-align: center;
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 3px;
   color: azure;
   text-shadow: 1px 0px 3px black;
 }
@@ -651,22 +734,42 @@ body {
   font-size: 1.4em;
   font-weight: bold;
   margin-top: -7px;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #factions .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
-#factions .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item, #factions .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+#factions .navbar .collapse .navbar-nav .nav-item #univers {
+  height: 80px;
+}
+#factions .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item {
   overflow: auto;
   max-width: 300px;
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#factions .navbar .collapse .navbar-nav .nav-item #media {
+  height: 80px;
+}
+#factions .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 320px;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 5px;
   margin-top: -7px;
   color: black;
   text-decoration: none;
@@ -678,11 +781,12 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-top: -4px;
+  letter-spacing: 5px;
   border-radius: 5px;
   color: azure;
   background: transparent;
   border: 1px solid azure;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #factions .navbar .collapse .navbar-nav #btnSubscribe:hover {
   color: black;
@@ -692,7 +796,9 @@ body {
 #factions .containFactions {
   top: 55%;
   left: 50%;
-  width: 2000px;
+  width: 100%;
+  overflow: auto;
+  max-width: 1800px;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -702,6 +808,7 @@ body {
   font-weight: bold;
   color: azure;
   margin: -60px auto;
+  letter-spacing: 5px;
   text-shadow: 1px 0px 3px black;
 }
 #factions .containFactions .row {
@@ -716,7 +823,7 @@ body {
 }
 #factions .containFactions .row .col-lg-2 .img-fluid {
   height: 450px;
-  max-width: 700px;
+  max-width: 1200px;
 }
 #factions .containFactions .row .col-lg-2 .types {
   margin: 20px auto;
@@ -726,6 +833,7 @@ body {
   font-size: 1.7em;
   font-weight: bold;
   color: azure;
+  letter-spacing: 5px;
   text-shadow: 1px 0px 3px black;
 }
 #factions .footer {
@@ -742,12 +850,13 @@ body {
   text-align: center;
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 3px;
   color: azure;
   text-shadow: 1px 0px 3px black;
 }
 #factions .modal #btnCloseModal {
   top: 0%;
-  left: 97%;
+  left: 98%;
   border: none;
   font-size: 1.6em;
   color: azure;
@@ -761,16 +870,15 @@ body {
   border: 1px solid azure;
   background-color: black;
 }
-#factions .modal .modal-dialog .modal-content .modal-body .img-fluid {
-  height: 450px;
-}
 #factions .modal .modal-dialog .modal-content .modal-body .info {
-  padding-top: 5px;
-  font-size: 1.4em;
-  text-align: center;
-  margin-bottom: -10px;
+  overflow: auto;
+  margin: 10px auto;
+  font-size: 1.3em;
   font-weight: bold;
+  letter-spacing: 5px;
   color: azure;
+  text-align: center;
+  text-decoration: none;
   text-shadow: 1px 0px 3px black;
 }
 
@@ -814,16 +922,46 @@ body {
   font-size: 1.4em;
   font-weight: bold;
   margin-top: -7px;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #characters .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
+}
+#characters .navbar .collapse .navbar-nav .nav-item #univers {
+  height: 80px;
+}
+#characters .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item {
+  overflow: auto;
+  max-width: 300px;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#characters .navbar .collapse .navbar-nav .nav-item #media {
+  height: 80px;
+}
+#characters .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 320px;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
 }
 #characters .navbar .collapse .navbar-nav #btnSubscribe {
   padding: 6px;
@@ -831,15 +969,17 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-top: -4px;
+  letter-spacing: 5px;
   border-radius: 5px;
   color: azure;
   background: transparent;
   border: 1px solid azure;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #characters .navbar .collapse .navbar-nav #btnSubscribe:hover {
   color: black;
   background: azure;
+  text-shadow: 1px 0px 0px black;
 }
 #characters .containCharacters {
   margin: -100px auto;
@@ -851,6 +991,7 @@ body {
   text-align: center;
   font-size: 2.2em;
   font-weight: bold;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
   text-shadow: 1px 3px 3px black;
@@ -869,6 +1010,7 @@ body {
 #characters .containCharacters .meetCharacters .listBtnCharacters .row .col-lg-4 .mainCharacters, #characters .containCharacters .meetCharacters .listBtnCharacters .row .col-lg-4 .secondaryCharacters {
   top: 50%;
   left: 50%;
+  letter-spacing: 5px;
   position: relative;
   cursor: pointer;
   font-size: 1.4em;
@@ -923,6 +1065,7 @@ body {
   text-align: center;
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 3px;
   color: azure;
   text-shadow: 1px 0px 3px black;
 }
@@ -950,12 +1093,14 @@ body {
   font-weight: bold;
   margin: 10px auto;
   text-align: center;
+  letter-spacing: 5px;
   color: azure;
   text-shadow: 1px 0px 3px black;
 }
 #characters .modal .modal-dialog .modal-content .modal-body .info {
   height: 140px;
   overflow: auto;
+  letter-spacing: 5px;
   font-size: 1.3em;
   font-weight: bold;
   color: azure;
@@ -1006,22 +1151,42 @@ body {
   font-size: 1.4em;
   font-weight: bold;
   margin-top: -7px;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #serieTv .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
-#serieTv .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item, #serieTv .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+#serieTv .navbar .collapse .navbar-nav .nav-item #univers {
+  height: 80px;
+}
+#serieTv .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item {
   overflow: auto;
   max-width: 300px;
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#serieTv .navbar .collapse .navbar-nav .nav-item #media {
+  height: 80px;
+}
+#serieTv .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 320px;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 5px;
   margin-top: -7px;
   color: black;
   text-decoration: none;
@@ -1033,11 +1198,12 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-top: -4px;
+  letter-spacing: 5px;
   border-radius: 5px;
   color: azure;
   background: transparent;
   border: 1px solid azure;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #serieTv .navbar .collapse .navbar-nav #btnSubscribe:hover {
   color: black;
@@ -1056,9 +1222,10 @@ body {
   max-width: 600px;
 }
 #serieTv .containSerieTv .pitch {
-  max-width: 850px;
+  max-width: 900px;
   text-align: center;
   font-size: 1.4em;
+  letter-spacing: 5px;
   font-weight: bold;
   margin-top: -17px;
   color: azure;
@@ -1088,6 +1255,7 @@ body {
 #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row .col-lg-4 .nameEpisode .title {
   text-align: center;
   font-size: 1.4em;
+  letter-spacing: 5px;
   font-weight: bold;
   color: azure;
   text-shadow: 1px 0px 3px black;
@@ -1112,6 +1280,7 @@ body {
 #serieTv .footer .copy {
   text-align: center;
   font-size: 1.4em;
+  letter-spacing: 3px;
   font-weight: bold;
   color: azure;
   text-shadow: 1px 0px 3px black;
@@ -1158,22 +1327,42 @@ body {
   font-size: 1.4em;
   font-weight: bold;
   margin-top: -7px;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
 #americanDreams .navbar .collapse .navbar-nav .nav-item .dropdown-toggle {
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
   color: azure;
   text-decoration: none;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
 }
-#americanDreams .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item, #americanDreams .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+#americanDreams .navbar .collapse .navbar-nav .nav-item #univers {
+  height: 80px;
+}
+#americanDreams .navbar .collapse .navbar-nav .nav-item #univers .dropdown-item {
   overflow: auto;
   max-width: 300px;
   font-size: 1.4em;
   font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: -7px;
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px black;
+}
+#americanDreams .navbar .collapse .navbar-nav .nav-item #media {
+  height: 80px;
+}
+#americanDreams .navbar .collapse .navbar-nav .nav-item #media .dropdown-item {
+  overflow: auto;
+  max-width: 320px;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 5px;
   margin-top: -7px;
   color: black;
   text-decoration: none;
@@ -1185,11 +1374,17 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-top: -4px;
+  letter-spacing: 5px;
   border-radius: 5px;
   color: azure;
   background: transparent;
   border: 1px solid azure;
-  text-shadow: 1px 0px 3px black;
+  text-shadow: 0px 1px 11px black, -5px 0px 6px black;
+}
+#americanDreams .navbar .collapse .navbar-nav #btnSubscribe:hover {
+  color: black;
+  background: azure;
+  text-shadow: 1px 0px 0px black;
 }
 #americanDreams .containBd {
   top: 20%;
@@ -1214,7 +1409,7 @@ body {
   transform: scale(1.1);
 }
 #americanDreams .containBd .row .col-lg-8 {
-  margin: 55px auto;
+  margin: -5px auto;
   border-radius: 20px;
   background: black;
   border: 1px solid azure;
@@ -1225,6 +1420,7 @@ body {
   font-weight: bold;
   margin-top: 10px;
   line-height: 40px;
+  letter-spacing: 5px;
   color: azure;
   text-shadow: 2px 2px 0px #000000, 5px 4px 0px rgba(0, 0, 0, 0.15), 2px 2px 2px rgba(206, 89, 55, 0);
 }
@@ -1248,6 +1444,7 @@ body {
   margin: 27px auto;
   border-radius: 5px;
   color: azure;
+  letter-spacing: 5px;
   background: transparent;
   border: 1px solid azure;
 }
@@ -1270,6 +1467,7 @@ body {
   font-size: 1.4em;
   font-weight: bold;
   color: azure;
+  letter-spacing: 3px;
   text-shadow: 1px 0px 3px black;
 }
 
@@ -1292,8 +1490,19 @@ body {
   #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row {
     width: 1200px;
   }
+  #americanDreams .containBd {
+    top: 15%;
+    height: 600px;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+  }
+  #americanDreams .containBd .row .col-lg-4 {
+    margin-left: 20px;
+  }
   #americanDreams .containBd .row .col-lg-8 {
-    margin: 45px auto;
+    height: 400px;
+    overflow: auto;
+    margin: 75px auto;
     max-width: 900px;
   }
   #americanDreams .containBd .row .col-lg-8 .listPict .row {
@@ -1304,10 +1513,28 @@ body {
   #main #carouselTlou .carousel-inner .carousel-item .d-block {
     max-width: 100%;
   }
+  #main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse {
+    width: 300px;
+  }
+  #main #carouselTlou .carousel-inner .carousel-item .containTlou .navbar .collapse .navbar-nav {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
   #tlou .show .logo {
     max-width: 600px;
     top: 0%;
     left: 45%;
+  }
+  #tlou .show .navbar .collapse {
+    width: 300px;
+  }
+  #tlou .show .navbar .collapse .navbar-nav {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  #tlou .experience .row .col-lg-4 .slogan {
+    height: 63px;
+    overflow: auto;
   }
   #tlou .media {
     height: 860px;
@@ -1324,6 +1551,30 @@ body {
   }
   #tlou .media .carousel .carousel-inner .carousel-item video {
     max-width: 950px;
+  }
+  #factions .navbar .collapse {
+    width: 300px;
+  }
+  #factions .navbar .collapse .navbar-nav {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  #factions .containFactions .row .col-lg-2 .img-fluid {
+    height: 250px;
+    overflow: hidden;
+  }
+  #factions .containFactions .row .col-lg-2 .types .name {
+    font-size: 1.4em;
+  }
+  #factions .modal #btnCloseModal {
+    left: 97%;
+  }
+  #infectes .navbar .collapse {
+    width: 300px;
+  }
+  #infectes .navbar .collapse .navbar-nav {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
   #infectes .containInfectes .people {
     width: 1000px;
@@ -1342,10 +1593,20 @@ body {
     flex-direction: column;
   }
   #infectes .containInfectes #btnVideo {
-    margin: 15px auto;
+    margin: -5px auto;
+  }
+  #characters .navbar .collapse {
+    width: 300px;
+  }
+  #characters .navbar .collapse .navbar-nav {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  #characters .containCharacters {
+    margin: -140px auto;
   }
   #characters .containCharacters .showCharacters .presentCharacters {
-    height: 460px;
+    height: 440px;
     overflow: auto;
     margin-top: 20px;
   }
@@ -1370,7 +1631,11 @@ body {
     background-image: url("/assets/pict/media/serieTV/theLastOfUsSeriePortable.jpg");
   }
   #serieTv .navbar .collapse {
-    margin-right: 35px;
+    width: 300px;
+  }
+  #serieTv .navbar .collapse .navbar-nav {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
   #serieTv .containSerieTv {
     top: 65%;
@@ -1395,22 +1660,24 @@ body {
   #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row .col-lg-4 .img-fluid {
     height: 150px;
   }
-  #americanDreams .containBd .row .col-lg-4 .img-fluid {
-    height: 600px;
-    max-width: 300px;
-    margin-right: -30px;
-    margin-top: 20px;
+  #americanDreams .navbar .collapse {
+    width: 300px;
+  }
+  #americanDreams .navbar .collapse .navbar-nav {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
   #americanDreams .containBd .row .col-lg-8 {
-    margin: -2px auto;
-    max-width: 620px;
-  }
-  #americanDreams .containBd .row .col-lg-8 .story {
-    line-height: 33px;
+    height: 490px;
+    overflow: auto;
+    margin: 95px auto;
+    max-width: 600px;
   }
   #americanDreams .containBd .row .col-lg-8 .listPict .row {
-    margin: 30px auto;
     max-width: 600px;
+  }
+  #americanDreams .footer {
+    top: 96%;
   }
 }
 @media screen and (max-width: 970px) {
@@ -1437,6 +1704,17 @@ body {
     position: absolute;
   }
   #tlou .show .navbar .collapse .navbar-nav {
+    display: none;
+  }
+  #factions .navbar {
+    justify-content: space-between;
+  }
+  #factions .navbar #btnBar {
+    right: 2%;
+    display: block;
+    position: absolute;
+  }
+  #factions .navbar .collapse .navbar-nav {
     display: none;
   }
   #infectes .navbar {
@@ -1517,6 +1795,8 @@ body {
     max-width: 650px;
   }
   #tlou .show .pitch .sentence {
+    height: 170px;
+    overflow: auto;
     margin: -10px auto;
     font-size: 1.2em;
   }
@@ -1557,6 +1837,43 @@ body {
   #tlou .media .footer {
     margin: 560px auto;
   }
+  #factions {
+    height: 110vh;
+  }
+  #factions .containFactions {
+    top: 62%;
+    max-width: 290px;
+  }
+  #factions .containFactions .different {
+    font-size: 1.7em;
+    margin: 10px auto;
+  }
+  #factions .containFactions .row {
+    height: 525px;
+    overflow: auto;
+    transform: translate(-50%, -8%);
+  }
+  #factions .containFactions .row .col-lg-2 .img-fluid {
+    height: 200px;
+    margin: auto;
+    display: block;
+    max-width: 250px;
+  }
+  #factions .containFactions .row .col-lg-2 .types {
+    margin: 2px auto;
+  }
+  #factions .footer {
+    margin: 80px auto;
+  }
+  #factions .modal #btnCloseModal {
+    left: 95%;
+  }
+  #factions .modal .modal-dialog .modal-content .modal-body .img-fluid {
+    height: 300px;
+  }
+  #factions .modal .modal-dialog .modal-content .modal-body .info {
+    height: 150px;
+  }
   #infectes .containInfectes .people {
     height: 650px;
     width: 600px;
@@ -1584,16 +1901,19 @@ body {
     position: relative;
     transform: translate(-50%, -50%);
     max-width: 400px;
-    height: 480px;
+    height: 420px;
   }
   #infectes .containInfectes #btnVideo {
-    margin: -55px auto;
+    margin: -115px auto;
   }
   #characters .modal #btnCloseModal {
     left: 95%;
   }
   #characters .modal .modal-dialog {
     max-width: 700px;
+  }
+  #serieTv .navbar #btnBar {
+    margin-right: 10px;
   }
   #serieTv .containSerieTv {
     top: 10%;
@@ -1610,7 +1930,7 @@ body {
     top: 78%;
   }
   #serieTv .listEpisode #carouselListEpisodes .carousel-inner .carousel-item .row {
-    height: 290px;
+    height: 250px;
     width: 560px;
     overflow: auto;
   }
@@ -1640,29 +1960,23 @@ body {
     background: black;
     border: 1px solid azure;
   }
-  #americanDreams .containBd {
-    top: -11%;
-    height: 100px;
+  #americanDreams .containBd .col-lg-4 .img-fluid {
+    margin-left: -10px;
+  }
+  #americanDreams .containBd .col-lg-8 {
+    height: 690px;
+    overflow: auto;
+    margin: 95px auto;
     max-width: 600px;
   }
-  #americanDreams .containBd .row {
-    height: 600px;
-    overflow: auto;
-  }
-  #americanDreams .containBd .row .col-lg-4 .img-fluid {
-    height: 600px;
-    max-width: 450px;
-  }
-  #americanDreams .containBd .row .col-lg-8 {
-    margin: 25px auto;
-  }
-  #americanDreams .containBd .row .col-lg-8 .listPict .row {
+  #americanDreams .containBd .col-lg-8 .listPict {
     text-align: center;
-    height: 300px;
-    overflow: auto;
   }
-  #americanDreams .containBd .row .col-lg-8 .listPict .row .col-lg-3 .img-fluid {
-    height: 300px;
+  #americanDreams .containBd .col-lg-8 .listPict .row {
+    max-width: 600px;
+  }
+  #americanDreams .containBd .col-lg-8 .listPict .row .col-lg-3 {
+    margin: 15px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -1670,7 +1984,8 @@ body {
     max-width: 100%;
   }
   #main #carouselTlou .carousel-inner .carousel-item .containTlou .footer .copy {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    width: 600px;
   }
   #tlou .show .logo {
     max-width: 400px;
@@ -1733,8 +2048,24 @@ body {
   #tlou .media .footer {
     margin: 380px auto;
   }
+  #tlou .media .footer .copy {
+    margin: auto;
+    font-size: 1.4em;
+    width: 360px;
+  }
+  #factions .modal #btnCloseModal {
+    left: 93%;
+  }
+  #factions .footer .copy {
+    font-size: 1.4em;
+    width: 300px;
+  }
+  #infectes .containInfectes .different {
+    margin: 5px auto;
+    font-size: 1.6em;
+  }
   #infectes .containInfectes .people {
-    height: 650px;
+    height: 550px;
     width: 320px;
     margin: 0px auto;
     overflow: auto;
@@ -1755,18 +2086,25 @@ body {
     margin-right: 20px;
   }
   #infectes .containInfectes .people .row .col-lg-2 .img-fluid {
-    top: 45%;
-    left: 48%;
+    top: 40%;
+    left: 50%;
     position: relative;
     transform: translate(-50%, -50%);
     max-width: 300px;
-    height: 420px;
+    height: 380px;
+  }
+  #infectes .containInfectes .people .row .col-lg-2 .types {
+    margin: 10px auto;
   }
   #infectes .containInfectes #btnVideo {
-    margin: -95px auto;
+    margin: -75px auto;
+  }
+  #infectes .footer {
+    margin: -10px auto;
   }
   #infectes .footer .copy {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    width: 300px;
   }
   #characters .containCharacters {
     margin: -180px auto;
@@ -1809,7 +2147,8 @@ body {
     height: 300px;
   }
   #characters .footer .copy {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    width: 300px;
   }
   #serieTv .navbar #btnBar {
     margin-right: 5px;
@@ -1859,46 +2198,46 @@ body {
     top: 98%;
   }
   #serieTv .footer .copy {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    width: 300px;
   }
-  #americanDreams .containBd {
-    top: -14%;
-    height: 100px;
-    max-width: 340px;
+  #americanDreams .containBd .col-lg-4 .img-fluid {
+    max-width: 200px;
+    margin-left: -65px;
   }
-  #americanDreams .containBd .row {
-    height: 640px;
+  #americanDreams .containBd .col-lg-8 {
+    height: 590px;
     overflow: auto;
+    margin: -15px auto;
+    width: 400px;
   }
-  #americanDreams .containBd .row .col-lg-4 .img-fluid {
-    height: 640px;
-    max-width: 370px;
-    margin-left: -18px;
-  }
-  #americanDreams .containBd .row .col-lg-8 {
-    margin: 25px auto;
-  }
-  #americanDreams .containBd .row .col-lg-8 .listPict .row {
+  #americanDreams .containBd .col-lg-8 .listPict {
     text-align: center;
-    height: 300px;
-    overflow: auto;
   }
-  #americanDreams .containBd .row .col-lg-8 .listPict .row .col-lg-3 .img-fluid {
-    height: 300px;
+  #americanDreams .containBd .col-lg-8 .listPict .row {
+    max-width: 400px;
+  }
+  #americanDreams .containBd .col-lg-8 .listPict .row .col-lg-3 {
+    margin: 15px;
   }
   #americanDreams .footer {
     top: 98%;
   }
   #americanDreams .footer .copy {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    width: 300px;
   }
 }
 @media screen and (max-width: 375px) {
   #main #carouselTlou .carousel-inner .carousel-item .d-block {
     max-width: 100%;
   }
+  #main #carouselTlou .carousel-inner .carousel-item .containTlou .moreInfo #btnInfo {
+    width: 230px;
+  }
   #main #carouselTlou .carousel-inner .carousel-item .containTlou .footer .copy {
-    width: 260px;
+    font-size: 1.4em;
+    width: 450px;
   }
   #tlou .show .logo {
     max-width: 400px;
@@ -1958,44 +2297,59 @@ body {
     height: 500px;
     max-width: 350px;
   }
+  #tlou .media .footer {
+    margin: 380px auto;
+  }
+  #tlou .media .footer .copy {
+    margin: auto;
+    font-size: 1.4em;
+    width: 340px;
+  }
+  #factions .containFactions {
+    top: 64%;
+  }
+  #factions .containFactions .row {
+    height: 545px;
+  }
+  #factions .containFactions .row .col-lg-2 .img-fluid {
+    height: 190px;
+    margin: auto;
+    display: block;
+    max-width: 250px;
+  }
+  #factions .containFactions .row .col-lg-2 .types {
+    margin: 2px auto;
+  }
+  #factions .footer .copy {
+    font-size: 1.4em;
+    width: 350px;
+  }
+  #factions .modal #btnCloseModal {
+    left: 91%;
+  }
   #infectes .containInfectes {
     margin: -170px auto;
   }
   #infectes .containInfectes .people {
-    height: 650px;
-    width: 290px;
-  }
-  #infectes .containInfectes .people .row {
-    top: 2%;
-    left: -20%;
-    height: 500px;
-    overflow: auto;
-    width: 480px;
-    position: relative;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-  }
-  #infectes .containInfectes .people .row .col-lg-2 {
-    margin-left: -20px;
-    margin-right: 20px;
-  }
-  #infectes .containInfectes .people .row .col-lg-2 .img-fluid {
-    top: 45%;
-    left: 48%;
-    position: relative;
-    transform: translate(-50%, -50%);
-    max-width: 300px;
-    height: 420px;
+    height: 550px;
+    width: 320px;
   }
   #infectes .containInfectes #btnVideo {
-    margin: -105px auto;
+    margin: -75px auto;
   }
   #infectes .footer .copy {
-    width: 260px;
+    font-size: 1.4em;
+    width: 350px;
+  }
+  #characters .containCharacters .meetCharacters .meet {
+    font-size: 1.8em;
   }
   #characters .footer .copy {
-    width: 260px;
+    font-size: 1.4em;
+    width: 300px;
+  }
+  #characters .modal #btnCloseModal {
+    left: 92%;
   }
   #serieTv .listEpisode #carouselListEpisodes {
     top: 82%;
@@ -2017,41 +2371,41 @@ body {
   #serieTv .listEpisode #carouselListEpisodes .carousel-control-next {
     margin-right: -2px;
   }
+  #serieTv .footer {
+    top: 97%;
+  }
   #serieTv .footer .copy {
-    width: 260px;
+    font-size: 1.4em;
+    width: 300px;
   }
-  #americanDreams .containBd {
-    top: -14%;
-    height: 100px;
-    max-width: 320px;
+  #americanDreams .containBd .col-lg-8 {
+    height: 590px;
+    width: 300px;
   }
-  #americanDreams .containBd .row {
-    height: 680px;
-    overflow: auto;
-  }
-  #americanDreams .containBd .row .col-lg-4 .img-fluid {
-    height: 670px;
-    max-width: 370px;
-    margin-left: -18px;
-  }
-  #americanDreams .containBd .row .col-lg-8 {
-    margin: 25px auto;
-  }
-  #americanDreams .containBd .row .col-lg-8 .listPict .row {
+  #americanDreams .containBd .col-lg-8 .listPict {
     text-align: center;
-    height: 300px;
-    overflow: auto;
   }
-  #americanDreams .containBd .row .col-lg-8 .listPict .row .col-lg-3 .img-fluid {
-    height: 300px;
+  #americanDreams .containBd .col-lg-8 .listPict .row {
+    max-width: 400px;
+  }
+  #americanDreams .containBd .col-lg-8 .listPict .row .col-lg-3 {
+    padding-right: 40px;
+  }
+  #americanDreams .containBd .col-lg-8 .listPict .row .col-lg-3 .img-fluid {
+    max-width: 250px;
   }
   #americanDreams .footer .copy {
-    width: 260px;
+    font-size: 1.4em;
+    width: 300px;
   }
 }
 @media screen and (max-width: 320px) {
   #main #carouselTlou .carousel-inner .carousel-item .d-block {
     max-width: 100%;
+  }
+  #main #carouselTlou .carousel-inner .carousel-item .containTlou .footer .copy {
+    font-size: 1.2em;
+    width: 300px;
   }
   #tlou .show .navbar #btnBar {
     margin-right: 7px;
@@ -2114,6 +2468,25 @@ body {
     height: 500px;
     max-width: 350px;
   }
+  #tlou .media .footer {
+    margin: 380px auto;
+  }
+  #tlou .media .footer .copy {
+    margin: auto;
+    font-size: 1.4em;
+    width: 220px;
+  }
+  #characters .containCharacters .meetCharacters .meet {
+    font-size: 1.6em;
+  }
+  #characters .footer .copy {
+    font-size: 1.4em;
+    width: 300px;
+  }
+  #factions .footer .copy {
+    font-size: 1.4em;
+    width: 300px;
+  }
   #serieTv .containSerieTv {
     top: 67%;
     left: 50%;
@@ -2145,32 +2518,17 @@ body {
   #serieTv .listEpisode #carouselListEpisodes .carousel-control-next {
     margin-right: 6px;
   }
-  #americanDreams .containBd {
-    top: -14%;
-    height: 100px;
-    max-width: 270px;
-  }
-  #americanDreams .containBd .row {
-    height: 680px;
-    overflow: auto;
-  }
-  #americanDreams .containBd .row .col-lg-4 .img-fluid {
-    height: 670px;
-    max-width: 370px;
-    margin-left: -24px;
-  }
-  #americanDreams .containBd .row .col-lg-8 {
-    margin: 25px auto;
-  }
-  #americanDreams .containBd .row .col-lg-8 .listPict .row {
-    text-align: center;
-    height: 300px;
-    overflow: auto;
-  }
-  #americanDreams .containBd .row .col-lg-8 .listPict .row .col-lg-3 .img-fluid {
-    height: 300px;
-  }
   #americanDreams .footer .copy {
     width: 260px;
+  }
+  #infectes .different {
+    font-size: 1.4em;
+  }
+  #infectes .footer {
+    margin: -10px auto;
+  }
+  #infectes .footer .copy {
+    font-size: 1.4em;
+    width: 300px;
   }
 }/*# sourceMappingURL=styles.css.map */

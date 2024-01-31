@@ -63,22 +63,40 @@ $secondColor: black;
                                         font-weight: bold;
                                         margin-top: -7px;
                                         color: $firstColor;
+                                        letter-spacing: 5px;
                                         text-decoration: none;
                                         text-shadow: 1px 0px 3px $secondColor;
                                     }
                                     .dropdown-toggle {
                                         font-size: 1.4em;
                                         font-weight: bold;
+                                        letter-spacing: 5px;
                                         color: $firstColor;
                                         text-decoration: none;
                                         text-shadow: 1px 0px 3px $secondColor;
                                     }
-                                    #univers, #media {
+                                    #univers {
+                                        height: 80px;
                                         .dropdown-item {
                                             overflow: auto;
                                             max-width: 300px;
                                             font-size: 1.4em;
                                             font-weight: bold;
+                                            letter-spacing: 5px;
+                                            margin-top: -7px;
+                                            color: $secondColor;
+                                            text-decoration: none;
+                                            text-shadow: 1px 0px 0px $secondColor;
+                                        }
+                                    }
+                                    #media {
+                                        height: 80px;
+                                        .dropdown-item {
+                                            overflow: auto;
+                                            max-width: 320px;
+                                            font-size: 1.4em;
+                                            font-weight: bold;
+                                            letter-spacing: 5px;
                                             margin-top: -7px;
                                             color: $secondColor;
                                             text-decoration: none;
@@ -93,6 +111,7 @@ $secondColor: black;
                                     cursor: pointer;
                                     margin-top: -4px;
                                     border-radius: 5px;
+                                    letter-spacing: 5px;
                                     color: $firstColor;
                                     background: transparent;
                                     border: 1px solid $firstColor;
@@ -107,7 +126,7 @@ $secondColor: black;
                         }
                     }
                     .moreInfo {
-                        top: 85%;
+                        top: 88%;
                         left: 50%;
                         position: absolute;
                         transform: translate(-50%, -50%);
@@ -117,6 +136,7 @@ $secondColor: black;
                             font-weight: bold;
                             cursor: pointer;
                             margin-top: -4px;
+                            letter-spacing: 3px;
                             border-radius: 5px;
                             color: $firstColor;
                             background: transparent;
@@ -141,6 +161,7 @@ $secondColor: black;
                         .copy {
                             text-align: center;
                             font-size: 1.4em;
+                            letter-spacing: 3px;
                             font-weight: bold;
                             color: $firstColor;
                             text-shadow: 1px 0px 3px $secondColor;
@@ -187,6 +208,7 @@ $secondColor: black;
                     font-size: 1.4em;
                     font-weight: bold;
                     margin-top: -7px;
+                    letter-spacing: 5px;
                     color: $firstColor;
                     text-decoration: none;
                     text-shadow: 1px 0px 3px $secondColor;
@@ -221,12 +243,13 @@ $secondColor: black;
             #btnSubscribe {
                 display: block;
                 padding: 6px;
-                max-width: 180px;
+                max-width: 240px;
                 font-size: 1.4em;
                 font-weight: bold;
                 cursor: pointer;
                 margin: 7px auto;
-                margin-right: 55px;
+                letter-spacing: 5px;
+                margin-right: 25px;
                 border-radius: 5px;
                 color: $firstColor;
                 background: transparent;
@@ -338,24 +361,41 @@ $secondColor: black;
                         font-size: 1.4em;
                         font-weight: bold;
                         margin-top: -7px;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
                     .dropdown-toggle {
                         font-size: 1.4em;
                         font-weight: bold;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
-                    #univers, #media {
+                    #univers {
                         height: 80px;
                         .dropdown-item {
                             overflow: auto;
                             max-width: 300px;
                             font-size: 1.4em;
                             font-weight: bold;
+                            letter-spacing: 5px;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
+                    }
+                    #media {
+                        height: 80px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 320px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            letter-spacing: 5px;
                             margin-top: -7px;
                             color: $secondColor;
                             text-decoration: none;
@@ -363,26 +403,27 @@ $secondColor: black;
                         }
                     }
                 }
-                #btnSuscribe {
-                    padding: 6px;
-                    font-size: 1.4em;
-                    font-weight: bold;
-                    cursor: pointer;
-                    margin-top: -4px;
-                    border-radius: 5px;
-                    color: $firstColor;
-                    background: transparent;
-                    border: 1px solid $firstColor;
-                    text-shadow: 1px 0px 3px $secondColor;
-                    &:hover {
-                        color: $secondColor;
-                        background: $firstColor;
-                        text-shadow: 1px 0px 0px $secondColor;
+                    #btnSubscribe {
+                        padding: 6px;
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        cursor: pointer;
+                        margin-top: -4px;
+                        letter-spacing: 5px;
+                        border-radius: 5px;
+                        color: $firstColor;
+                        background: transparent;
+                        border: 1px solid $firstColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
+                        &:hover {
+                            color: $secondColor;
+                            background: $firstColor;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
                     }
                 }
             }
         }
-    }
         .logo {
             max-width: 600px;
             top: 0%;
@@ -397,13 +438,20 @@ $secondColor: black;
                 margin: -22px auto;
                 display: block;
                 width: 100%;
+                font-weight: bold;
                 cursor: pointer;
-                max-width: 100px;
+                max-width: 140px;
                 font-size: 1.2em;
+                letter-spacing: 5px;
                 color: $firstColor;
                 border-radius: 3px;
                 background: transparent;
                 border: 1px solid $firstColor;
+                text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
+                &:hover {
+                    color: $secondColor;
+                    background: $firstColor;
+                }
             }
         }
         .pitch {
@@ -412,10 +460,12 @@ $secondColor: black;
             display: block;
             max-width: 1200px;
             .sentence {
+                letter-spacing: 5px;
                 text-align: center;
                 font-size: 1.4em;
+                font-weight: bold;
                 color: $firstColor;
-                text-shadow: 1px 0px 3px $secondColor;
+                text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
             }
         }
     }
@@ -429,7 +479,8 @@ $secondColor: black;
             margin: 10px auto;
             text-align: center;
             color: $firstColor;
-            text-shadow: 1px 0px 3px $secondColor;
+            letter-spacing: 5px;
+            text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
         }
         .row {
             padding: 10px;
@@ -446,7 +497,10 @@ $secondColor: black;
                     text-align: center;
                     .sentenceLive {
                         font-size: 1.2em;
+                        letter-spacing: 5px;
                         color: $firstColor;
+                        font-weight: bold;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
                 }
             }
@@ -496,6 +550,7 @@ $secondColor: black;
             .copy {
                 text-align: center;
                 font-size: 1.4em;
+                letter-spacing: 5px;
                 font-weight: bold;
                 color: $firstColor;
                 text-shadow: 1px 0px 3px $secondColor;
@@ -542,23 +597,41 @@ $secondColor: black;
                         font-size: 1.4em;
                         font-weight: bold;
                         margin-top: -7px;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
                     .dropdown-toggle {
                         font-size: 1.4em;
                         font-weight: bold;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
-                    #univers, #media {
+                    #univers {
+                        height: 80px;
                         .dropdown-item {
                             overflow: auto;
                             max-width: 300px;
                             font-size: 1.4em;
                             font-weight: bold;
+                            letter-spacing: 5px;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
+                    }
+                    #media {
+                        height: 80px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 320px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            letter-spacing: 5px;
                             margin-top: -7px;
                             color: $secondColor;
                             text-decoration: none;
@@ -572,14 +645,16 @@ $secondColor: black;
                     font-weight: bold;
                     cursor: pointer;
                     margin-top: -4px;
+                    letter-spacing: 5px;
                     border-radius: 5px;
                     color: $firstColor;
                     background: transparent;
                     border: 1px solid $firstColor;
-                    text-shadow: 1px 0px 3px $secondColor;
+                    text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     &:hover {
                         color: $secondColor;
                         background: $firstColor;
+                        text-shadow: 1px 0px 0px $secondColor;
                     }
                 }
             }
@@ -593,6 +668,7 @@ $secondColor: black;
             font-size: 2.0em;
             font-weight: bold;
             color: $firstColor;
+            letter-spacing: 5px;
             text-shadow: 1px 0px 3px $secondColor;
         }
         .people {
@@ -612,6 +688,7 @@ $secondColor: black;
                             font-size: 1.7em;
                             font-weight: bold;
                             color: $firstColor;
+                            letter-spacing: 5px;
                             text-shadow: 1px 0px 3px $secondColor;
                         }
                     }
@@ -624,6 +701,7 @@ $secondColor: black;
             font-weight: bold;
             cursor: pointer;
             display: block;
+            letter-spacing: 5px;
             margin: -35px auto;
             border-radius: 5px;
             color: $firstColor;
@@ -655,6 +733,7 @@ $secondColor: black;
             text-align: center;
             font-size: 1.4em;
             font-weight: bold;
+            letter-spacing: 3px;
             color: $firstColor;
             text-shadow: 1px 0px 3px $secondColor;
         }
@@ -699,23 +778,41 @@ $secondColor: black;
                         font-size: 1.4em;
                         font-weight: bold;
                         margin-top: -7px;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
                     .dropdown-toggle {
                         font-size: 1.4em;
                         font-weight: bold;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
-                    #univers, #media {
+                    #univers {
+                        height: 80px;
                         .dropdown-item {
                             overflow: auto;
                             max-width: 300px;
                             font-size: 1.4em;
                             font-weight: bold;
+                            letter-spacing: 5px;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
+                    }
+                    #media {
+                        height: 80px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 320px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            letter-spacing: 5px;
                             margin-top: -7px;
                             color: $secondColor;
                             text-decoration: none;
@@ -729,11 +826,12 @@ $secondColor: black;
                     font-weight: bold;
                     cursor: pointer;
                     margin-top: -4px;
+                    letter-spacing: 5px;
                     border-radius: 5px;
                     color: $firstColor;
                     background: transparent;
                     border: 1px solid $firstColor;
-                    text-shadow: 1px 0px 3px $secondColor;
+                    text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     &:hover {
                         color: $secondColor;
                         background: $firstColor;
@@ -746,7 +844,9 @@ $secondColor: black;
     .containFactions {
         top: 55%;
         left: 50%;
-        width: 2000px;
+        width: 100%;
+        overflow: auto;
+        max-width: 1800px;
         position: absolute;
         transform: translate(-50%, -50%);
         .different {
@@ -755,6 +855,7 @@ $secondColor: black;
             font-weight: bold;
             color: $firstColor;
             margin: -60px auto;
+            letter-spacing: 5px;
             text-shadow: 1px 0px 3px $secondColor;
         }
         .row {
@@ -767,7 +868,7 @@ $secondColor: black;
                 padding: 10px 20px;
                 .img-fluid {
                     height: 450px;
-                    max-width: 700px;
+                    max-width: 1200px;
                 }
                 .types {
                     margin: 20px auto;
@@ -776,6 +877,7 @@ $secondColor: black;
                         font-size: 1.7em;
                         font-weight: bold;
                         color: $firstColor;
+                        letter-spacing: 5px;
                         text-shadow: 1px 0px 3px $secondColor;
                     }
                 }
@@ -795,6 +897,7 @@ $secondColor: black;
             text-align: center;
             font-size: 1.4em;
             font-weight: bold;
+            letter-spacing: 3px;
             color: $firstColor;
             text-shadow: 1px 0px 3px $secondColor;
         }
@@ -802,7 +905,7 @@ $secondColor: black;
     .modal {
         #btnCloseModal {
             top: 0%;
-            left: 97%;
+            left: 98%;
             border: none;
             font-size: 1.6em;
             color: $firstColor;
@@ -817,16 +920,15 @@ $secondColor: black;
                 border: 1px solid $firstColor;
                 background-color: $secondColor;
                 .modal-body {
-                    .img-fluid {
-                        height: 450px;
-                    }
                     .info {
-                        padding-top: 5px;
-                        font-size: 1.4em;
-                        text-align: center;
-                        margin-bottom: -10px;
+                        overflow: auto;
+                        margin: 10px auto;
+                        font-size: 1.3em;
                         font-weight: bold;
+                        letter-spacing: 5px;
                         color: $firstColor;
+                        text-align: center;
+                        text-decoration: none;
                         text-shadow: 1px 0px 3px $secondColor;
                     }
                 }
@@ -873,16 +975,46 @@ $secondColor: black;
                         font-size: 1.4em;
                         font-weight: bold;
                         margin-top: -7px;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
                     .dropdown-toggle {
                         font-size: 1.4em;
                         font-weight: bold;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
+                    }
+                    #univers {
+                        height: 80px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 300px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            letter-spacing: 5px;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
+                    }
+                    #media {
+                        height: 80px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 320px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            letter-spacing: 5px;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
                     }
                 }
                 #btnSubscribe {
@@ -891,14 +1023,16 @@ $secondColor: black;
                     font-weight: bold;
                     cursor: pointer;
                     margin-top: -4px;
+                    letter-spacing: 5px;
                     border-radius: 5px;
                     color: $firstColor;
                     background: transparent;
                     border: 1px solid $firstColor;
-                    text-shadow: 1px 0px 3px $secondColor;
+                    text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     &:hover {
                         color: $secondColor;
                         background: $firstColor;
+                        text-shadow: 1px 0px 0px $secondColor;
                     }
                 }
             }
@@ -912,6 +1046,7 @@ $secondColor: black;
                 text-align: center;
                 font-size: 2.2em;
                 font-weight: bold;
+                letter-spacing: 5px;
                 color: $firstColor;
                 text-decoration: none;
                 text-shadow: 1px 3px 3px $secondColor;
@@ -928,6 +1063,7 @@ $secondColor: black;
                         .mainCharacters, .secondaryCharacters {
                             top: 50%;
                             left: 50%;
+                            letter-spacing: 5px;
                             position: relative;
                             cursor: pointer;
                             font-size: 1.4em;
@@ -988,6 +1124,7 @@ $secondColor: black;
             text-align: center;
             font-size: 1.4em;
             font-weight: bold;
+            letter-spacing: 3px;
             color: $firstColor;
             text-shadow: 1px 0px 3px $secondColor;
         }
@@ -1018,12 +1155,14 @@ $secondColor: black;
                         font-weight: bold;
                         margin: 10px auto;
                         text-align: center;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-shadow: 1px 0px 3px $secondColor;
                     }
                     .info {
                         height: 140px;
                         overflow: auto;
+                        letter-spacing: 5px;
                         font-size: 1.3em;
                         font-weight: bold;
                         color: $firstColor;
@@ -1077,23 +1216,41 @@ $secondColor: black;
                         font-size: 1.4em;
                         font-weight: bold;
                         margin-top: -7px;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
                     .dropdown-toggle {
                         font-size: 1.4em;
                         font-weight: bold;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
-                    #univers, #media {
+                    #univers {
+                        height: 80px;
                         .dropdown-item {
                             overflow: auto;
                             max-width: 300px;
                             font-size: 1.4em;
                             font-weight: bold;
+                            letter-spacing: 5px;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
+                    }
+                    #media {
+                        height: 80px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 320px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            letter-spacing: 5px;
                             margin-top: -7px;
                             color: $secondColor;
                             text-decoration: none;
@@ -1107,11 +1264,12 @@ $secondColor: black;
                     font-weight: bold;
                     cursor: pointer;
                     margin-top: -4px;
+                    letter-spacing: 5px;
                     border-radius: 5px;
                     color: $firstColor;
                     background: transparent;
                     border: 1px solid $firstColor;
-                    text-shadow: 1px 0px 3px $secondColor;
+                    text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     &:hover {
                         color: $secondColor;
                         background: $firstColor;
@@ -1132,9 +1290,10 @@ $secondColor: black;
             max-width: 600px;
         }
         .pitch {
-            max-width: 850px;
+            max-width: 900px;
             text-align: center;
             font-size: 1.4em;
+            letter-spacing: 5px;
             font-weight: bold;
             margin-top: -17px;
             color: $firstColor;
@@ -1168,6 +1327,7 @@ $secondColor: black;
                                 .title {
                                     text-align: center;
                                     font-size: 1.4em;
+                                    letter-spacing: 5px;
                                     font-weight: bold;
                                     color: $firstColor;
                                     text-shadow: 1px 0px 3px $secondColor;
@@ -1198,6 +1358,7 @@ $secondColor: black;
         .copy {
             text-align: center;
             font-size: 1.4em;
+            letter-spacing: 3px;
             font-weight: bold;
             color: $firstColor;
             text-shadow: 1px 0px 3px $secondColor;
@@ -1244,23 +1405,41 @@ $secondColor: black;
                         font-size: 1.4em;
                         font-weight: bold;
                         margin-top: -7px;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
                     .dropdown-toggle {
                         font-size: 1.4em;
                         font-weight: bold;
+                        letter-spacing: 5px;
                         color: $firstColor;
                         text-decoration: none;
-                        text-shadow: 1px 0px 3px $secondColor;
+                        text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
                     }
-                    #univers, #media {
+                    #univers {
+                        height: 80px;
                         .dropdown-item {
                             overflow: auto;
                             max-width: 300px;
                             font-size: 1.4em;
                             font-weight: bold;
+                            letter-spacing: 5px;
+                            margin-top: -7px;
+                            color: $secondColor;
+                            text-decoration: none;
+                            text-shadow: 1px 0px 0px $secondColor;
+                        }
+                    }
+                    #media {
+                        height: 80px;
+                        .dropdown-item {
+                            overflow: auto;
+                            max-width: 320px;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            letter-spacing: 5px;
                             margin-top: -7px;
                             color: $secondColor;
                             text-decoration: none;
@@ -1274,11 +1453,17 @@ $secondColor: black;
                     font-weight: bold;
                     cursor: pointer;
                     margin-top: -4px;
+                    letter-spacing: 5px;
                     border-radius: 5px;
                     color: $firstColor;
                     background: transparent;
                     border: 1px solid $firstColor;
-                    text-shadow: 1px 0px 3px $secondColor;
+                    text-shadow: 0px 1px 11px $secondColor,-5px 0px 6px $secondColor;
+                    &:hover {
+                        color: $secondColor;
+                        background: $firstColor;
+                        text-shadow: 1px 0px 0px $secondColor;
+                    }
                 }
             }
         }
@@ -1306,7 +1491,7 @@ $secondColor: black;
                 }
             }
             .col-lg-8 {
-                margin: 55px auto;
+                margin: -5px auto;
                 border-radius: 20px;
                 background: $secondColor;
                 border: 1px solid $firstColor;
@@ -1316,6 +1501,7 @@ $secondColor: black;
                     font-weight: bold;
                     margin-top: 10px;
                     line-height: 40px;
+                    letter-spacing: 5px;
                     color: $firstColor;
                     text-shadow: 2px 2px 0px #000000, 5px 4px 0px rgba(0,0,0,0.15), 2px 2px 2px rgba(206,89,55,0);
                 }
@@ -1343,6 +1529,7 @@ $secondColor: black;
                     margin: 27px auto;
                     border-radius: 5px;
                     color: $firstColor;
+                    letter-spacing: 5px;
                     background: transparent;
                     border: 1px solid $firstColor;
                     &:hover {
@@ -1367,6 +1554,7 @@ $secondColor: black;
             font-size: 1.4em;
             font-weight: bold;
             color: $firstColor;
+            letter-spacing: 3px;
             text-shadow: 1px 0px 3px $secondColor;
         }
     }
@@ -1402,9 +1590,18 @@ $secondColor: black;
     }
     #americanDreams {
         .containBd {
+            top: 15%;
+            height: 600px;
+            overflow: auto;
+            transform: translate(-50%, -50%);
             .row {
+                .col-lg-4 {
+                    margin-left: 20px;
+                }
                 .col-lg-8 {
-                    margin: 45px auto;
+                    height: 400px;
+                    overflow: auto;
+                    margin: 75px auto;
                     max-width: 900px;
                     .listPict {
                         .row {
@@ -1425,6 +1622,16 @@ $secondColor: black;
                     .d-block {
                         max-width: 100%;
                     }
+                    .containTlou {
+                        .navbar {
+                            .collapse {
+                                width: 300px;
+                                .navbar-nav {
+                                    column-gap: 40px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1433,8 +1640,26 @@ $secondColor: black;
         .show {
             .logo {
                 max-width: 600px;
-            top: 0%;
-            left: 45%;
+                top: 0%;
+                left: 45%;
+            }
+            .navbar {
+                .collapse {
+                    width: 300px;
+                    .navbar-nav {
+                        column-gap: 40px;
+                    }
+                }
+            }
+        }
+        .experience {
+            .row {
+                .col-lg-4 {
+                    .slogan {
+                        height: 63px;
+                        overflow: auto;
+                    }
+                }
             }
         }
         .media {
@@ -1458,7 +1683,45 @@ $secondColor: black;
             }
         }
     }
+    #factions {
+        .navbar {
+            .collapse {
+                width: 300px;
+                .navbar-nav {
+                    column-gap: 40px;
+                }
+            }
+        }
+        .containFactions {
+            .row {
+                .col-lg-2 {
+                    .img-fluid {
+                        height: 250px;
+                        overflow: hidden;
+                    }
+                    .types {
+                        .name {
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+            }
+        }
+        .modal {
+            #btnCloseModal {
+                left: 97%;
+            }
+        }
+    }
     #infectes {
+        .navbar {
+            .collapse {
+                width: 300px;
+                .navbar-nav {
+                    column-gap: 40px;
+                }
+            }
+        }
         .containInfectes {
            .people {
             width: 1000px;
@@ -1476,15 +1739,24 @@ $secondColor: black;
                 }
            }
            #btnVideo {
-               margin: 15px auto;
+               margin: -5px auto;
            }
         }
     }
     #characters {
+        .navbar {
+            .collapse {
+                width: 300px;
+                .navbar-nav {
+                    column-gap: 40px;
+                }
+            }
+        }
         .containCharacters {
+            margin: -140px auto;
             .showCharacters {
                 .presentCharacters {
-                    height: 460px;
+                    height: 440px;
                     overflow: auto;
                     margin-top: 20px;
                     .row {
@@ -1516,7 +1788,10 @@ $secondColor: black;
         background-image: url('/assets/pict/media/serieTV/theLastOfUsSeriePortable.jpg');
         .navbar {
             .collapse {
-                margin-right: 35px;
+                width: 300px;
+                .navbar-nav {
+                    column-gap: 40px;
+                }
             }
         }
         .containSerieTv {
@@ -1552,30 +1827,31 @@ $secondColor: black;
         }
     }
     #americanDreams {
+        .navbar {
+            .collapse {
+                width: 300px;
+                .navbar-nav {
+                    column-gap: 40px;
+                }
+            }
+        }
         .containBd {
             .row {
-                .col-lg-4 {
-                    .img-fluid {
-                        height: 600px;
-                        max-width: 300px;
-                        margin-right: -30px;
-                        margin-top: 20px;
-                    }
-                }
                 .col-lg-8 {
-                    margin: -2px auto;
-                    max-width: 620px;
-                    .story {
-                        line-height: 33px;
-                    }
+                    height: 490px;
+                    overflow: auto;
+                    margin: 95px auto;
+                    max-width: 600px;
                     .listPict {
                         .row {
-                            margin: 30px auto;
                             max-width: 600px;
                         }
                     }
                 }
             }
+        }
+        .footer {
+            top: 96%;
         }
     }
 }
@@ -1620,6 +1896,21 @@ $secondColor: black;
                     .navbar-nav {
                         display: none;
                     }
+                }
+            }
+        }
+    }
+    #factions {
+        .navbar {
+            justify-content: space-between;
+            #btnBar {
+                right: 2%;
+                display: block;
+                position: absolute;
+            }
+            .collapse {
+                .navbar-nav {
+                    display: none;
                 }
             }
         }
@@ -1739,6 +2030,8 @@ $secondColor: black;
             .pitch {
                 max-width: 650px;
                 .sentence {
+                    height: 170px;
+                    overflow: auto;
                     margin: -10px auto;
                     font-size: 1.2em;
                 }
@@ -1790,6 +2083,53 @@ $secondColor: black;
             }
         }
     }
+    #factions {
+        height: 110vh;
+        .containFactions {
+            top: 62%;
+            max-width: 290px;
+            .different {
+                font-size: 1.7em;
+                margin: 10px auto;
+            }
+            .row {
+                height: 525px;
+                overflow: auto;
+                transform: translate(-50%, -8%);
+                .col-lg-2 {
+                    .img-fluid {
+                        height: 200px;
+                        margin: auto;
+                        display: block;
+                        max-width: 250px;
+                    }
+                    .types {
+                        margin: 2px auto;
+                    }
+                }
+            }
+        }
+        .footer {
+            margin: 80px auto;
+        }
+        .modal {
+            #btnCloseModal {
+                left: 95%;
+            }
+            .modal-dialog {
+                .modal-content {
+                    .modal-body {
+                        .img-fluid {
+                            height: 300px;
+                        }
+                        .info {
+                            height: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     #infectes {
         .containInfectes {
            .people {
@@ -1815,13 +2155,13 @@ $secondColor: black;
                             position: relative;
                             transform: translate(-50%, -50%);
                             max-width: 400px;
-                            height: 480px;
+                            height: 420px;
                         }
                     }
                 }
            }
            #btnVideo {
-               margin: -55px auto;
+               margin: -115px auto;
            }
         }
     }
@@ -1836,6 +2176,11 @@ $secondColor: black;
         }
     }
     #serieTv {
+        .navbar {
+            #btnBar {
+                margin-right: 10px;
+            }
+        }
         .containSerieTv {
             top: 10%;
             left: 50%;
@@ -1853,7 +2198,7 @@ $secondColor: black;
                 .carousel-inner {
                     .carousel-item {
                         .row {
-                            height: 290px;
+                            height: 250px;
                             width: 560px;
                             overflow: auto;
                             .col-lg-4 {
@@ -1892,34 +2237,26 @@ $secondColor: black;
     }
     #americanDreams {
         .containBd {
-            top: -11%;
-            height: 100px;
-            max-width: 600px;
-            .row {
-                height: 600px;
-                overflow: auto;
-                .col-lg-4 {
-                    .img-fluid {
-                        height: 600px;
-                        max-width: 450px;
-                    }
+            .col-lg-4 {
+                .img-fluid {
+                    margin-left: -10px;
                 }
-                .col-lg-8 {
-                    margin: 25px auto;
+            }
+            .col-lg-8 {
+                    height: 690px;
+                    overflow: auto;
+                    margin: 95px auto;
+                    max-width: 600px;
                     .listPict {
+                        text-align: center;
                         .row {
-                            text-align: center;
-                            height: 300px;
-                            overflow: auto;
+                            max-width: 600px;
                             .col-lg-3 {
-                                .img-fluid {
-                                    height: 300px;
-                                }
+                                margin: 15px;
                             }
                         }
                     }
                 }
-            }
         }
     }
 }
@@ -1935,7 +2272,8 @@ $secondColor: black;
                     .containTlou {
                         .footer {
                             .copy {
-                                font-size: 1.2em;
+                                font-size: 1.4em;
+                                width: 600px;
                             }
                         }
                     }
@@ -2011,13 +2349,35 @@ $secondColor: black;
             }
             .footer {
                 margin: 380px auto;
+                .copy {
+                    margin: auto;
+                    font-size: 1.4em;
+                    width: 360px;
+                }
+            }
+        }
+    }
+    #factions {
+        .modal {
+            #btnCloseModal {
+                left: 93%;
+            }
+        }
+        .footer {
+            .copy {
+                font-size: 1.4em;
+                width: 300px;
             }
         }
     }
     #infectes {
         .containInfectes {
+            .different {
+                margin: 5px auto;
+                font-size: 1.6em;
+            }
            .people {
-                height: 650px;
+                height: 550px;
                 width: 320px;
                 margin: 0px auto;
                 overflow: auto;
@@ -2034,23 +2394,28 @@ $secondColor: black;
                         margin-left: -20px;
                         margin-right: 20px;
                         .img-fluid {
-                            top: 45%;
-                            left: 48%;
+                            top: 40%;
+                            left: 50%;
                             position: relative;
                             transform: translate(-50%, -50%);
                             max-width: 300px;
-                            height: 420px;
+                            height: 380px;
+                        }
+                        .types {
+                            margin: 10px auto;
                         }
                     }
                 }
            }
            #btnVideo {
-               margin: -95px auto;
+               margin: -75px auto;
            }
         }
         .footer {
+            margin: -10px auto;
             .copy {
-                font-size: 1.2em;
+                font-size: 1.4em;
+                width: 300px;
             }
         }
     }
@@ -2107,7 +2472,8 @@ $secondColor: black;
         }
         .footer {
             .copy {
-                font-size: 1.2em;
+                font-size: 1.4em;
+                width: 300px;
             }
         }
     }
@@ -2169,46 +2535,40 @@ $secondColor: black;
         .footer {
             top: 98%;
             .copy {
-                font-size: 1.2em;
+                font-size: 1.4em;
+                width: 300px;
             }
         }
     }
     #americanDreams {
         .containBd {
-            top: -14%;
-            height: 100px;
-            max-width: 340px;
-            .row {
-                height: 640px;
-                overflow: auto;
-                .col-lg-4 {
-                    .img-fluid {
-                        height: 640px;
-                        max-width: 370px;
-                        margin-left: -18px;
-                    }
+            .col-lg-4 {
+                .img-fluid {
+                    max-width: 200px;
+                    margin-left: -65px;
                 }
-                .col-lg-8 {
-                    margin: 25px auto;
+            }
+            .col-lg-8 {
+                    height: 590px;
+                    overflow: auto;
+                    margin: -15px auto;
+                    width: 400px;
                     .listPict {
+                        text-align: center;
                         .row {
-                            text-align: center;
-                            height: 300px;
-                            overflow: auto;
+                            max-width: 400px;
                             .col-lg-3 {
-                                .img-fluid {
-                                    height: 300px;
-                                }
+                                margin: 15px;
                             }
                         }
                     }
                 }
-            }
         }
         .footer {
             top: 98%;
             .copy {
-                font-size: 1.2em;
+                font-size: 1.4em;
+                width: 300px;
             }
         }
     }
@@ -2223,9 +2583,15 @@ $secondColor: black;
                         max-width: 100%;
                     }
                     .containTlou {
+                        .moreInfo {
+                            #btnInfo {
+                                width: 230px;
+                            }
+                        }
                         .footer {
                             .copy {
-                                width: 260px;
+                                font-size: 1.4em;
+                                width: 450px;
                             }
                         }
                     }
@@ -2299,51 +2665,82 @@ $secondColor: black;
                     }
                 }
             }
+            .footer {
+                margin: 380px auto;
+                .copy {
+                    margin: auto;
+                    font-size: 1.4em;
+                    width: 340px;
+                }
+            }
+        }
+    }
+    #factions {
+        .containFactions {
+            top: 64%;
+            .row {
+                height: 545px;
+
+                .col-lg-2 {
+                    .img-fluid {
+                        height: 190px;
+                        margin: auto;
+                        display: block;
+                        max-width: 250px;
+                    }
+                    .types {
+                        margin: 2px auto;
+                    }
+                }
+            }
+        }
+        .footer {
+            .copy {
+                font-size: 1.4em;
+                width: 350px;
+            }
+        }
+        .modal {
+            #btnCloseModal {
+                left: 91%;
+            }
         }
     }
     #infectes {
         .containInfectes {
             margin: -170px auto;
            .people {
-                height: 650px;
-                width: 290px;
-                .row {
-                    top: 2%;
-                    left: -20%;
-                    height: 500px;
-                    overflow: auto;
-                    width: 480px;
-                    position: relative;
-                    margin: auto;
-                    @include flex (column);
-                    .col-lg-2 {
-                        margin-left: -20px;
-                        margin-right: 20px;
-                        .img-fluid {
-                            top: 45%;
-                            left: 48%;
-                            position: relative;
-                            transform: translate(-50%, -50%);
-                            max-width: 300px;
-                            height: 420px;
-                        }
-                    }
-                }
+                height: 550px;
+                width: 320px;
            }
            #btnVideo {
-               margin: -105px auto;
+               margin: -75px auto;
            }
         }
         .footer {
             .copy {
-                width: 260px;
+                font-size: 1.4em;
+                width: 350px;
             }
         }
     }
     #characters {
+        .containCharacters {
+            .meetCharacters {
+                .meet {
+                    font-size: 1.8em;
+                }
+            }
+        }
         .footer {
             .copy {
-                width: 260px;
+                font-size: 1.4em;
+                width: 300px;
+            }
+        }
+        .modal {
+            #btnCloseModal {
+                left: 92%;
             }
         }
     }
@@ -2377,46 +2774,36 @@ $secondColor: black;
             }
         }
         .footer {
+            top: 97%;
             .copy {
-                width: 260px;
+                font-size: 1.4em;
+                width: 300px;
             }
         }
     }
     #americanDreams {
         .containBd {
-            top: -14%;
-            height: 100px;
-            max-width: 320px;
-            .row {
-                height: 680px;
-                overflow: auto;
-                .col-lg-4 {
-                    .img-fluid {
-                        height: 670px;
-                        max-width: 370px;
-                        margin-left: -18px;
-                    }
-                }
-                .col-lg-8 {
-                    margin: 25px auto;
+            .col-lg-8 {
+                    height: 590px;
+                    width: 300px;
                     .listPict {
+                        text-align: center;
                         .row {
-                            text-align: center;
-                            height: 300px;
-                            overflow: auto;
+                            max-width: 400px;
                             .col-lg-3 {
+                                padding-right: 40px;
                                 .img-fluid {
-                                    height: 300px;
+                                    max-width: 250px;
                                 }
                             }
                         }
                     }
                 }
-            }
         }
         .footer {
             .copy {
-                width: 260px;
+                font-size: 1.4em;
+                width: 300px;
             }
         }
     }
@@ -2429,6 +2816,14 @@ $secondColor: black;
                 .carousel-item {
                     .d-block {
                         max-width: 100%;
+                    }
+                    .containTlou {
+                        .footer {
+                            .copy {
+                                font-size: 1.2em;
+                                width: 300px;
+                            }
+                        }
                     }
                 }
             }
@@ -2505,6 +2900,37 @@ $secondColor: black;
                     }
                 }
             }
+            .footer {
+                margin: 380px auto;
+                .copy {
+                    margin: auto;
+                    font-size: 1.4em;
+                    width: 220px;
+                }
+            }
+        }
+    }
+    #characters {
+        .containCharacters {
+            .meetCharacters {
+                .meet {
+                    font-size: 1.6em;
+                }
+            }
+        }
+        .footer {
+            .copy {
+                font-size: 1.4em;
+                width: 300px;
+            }
+        }
+    }
+    #factions {
+        .footer {
+            .copy {
+                font-size: 1.4em;
+                width: 300px;
+            }
         }
     }
     #serieTv {
@@ -2549,40 +2975,22 @@ $secondColor: black;
         }
     }
     #americanDreams {
-        .containBd {
-            top: -14%;
-            height: 100px;
-            max-width: 270px;
-            .row {
-                height: 680px;
-                overflow: auto;
-                .col-lg-4 {
-                    .img-fluid {
-                        height: 670px;
-                        max-width: 370px;
-                        margin-left: -24px;
-                    }
-                }
-                .col-lg-8 {
-                    margin: 25px auto;
-                    .listPict {
-                        .row {
-                            text-align: center;
-                            height: 300px;
-                            overflow: auto;
-                            .col-lg-3 {
-                                .img-fluid {
-                                    height: 300px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        
         .footer {
             .copy {
                 width: 260px;
+            }
+        }
+    }
+    #infectes {
+        .different {
+            font-size: 1.4em;
+        }
+        .footer {
+            margin: -10px auto;
+            .copy {
+                font-size: 1.4em;
+                width: 300px;
             }
         }
     }

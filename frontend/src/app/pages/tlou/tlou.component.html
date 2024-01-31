@@ -16,14 +16,13 @@
                 </li>
                 <li class="nav-item"><a href="#" class="nav-link">PERSONNAGES</a></li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#goodies">GOODIES</a>
-                    <div class="dropdown-menu" id="goodies">
-                        <a href="#" class="dropdown-item">FIGURINES</a>
-                        <a href="#" class="dropdown-item">VETEMENTS</a>
-                        <a href="#" class="dropdown-item">ACCESSOIRES</a>
-                    </div>
-                </li>
-                <button type="button" id="btnSuscribe" [routerLink]="'/suscribe'">ABONNEMENT</button>
+                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#media">MEDIA</a>
+                        <div class="dropdown-menu" id="media">
+                            <a href="#" class="dropdown-item" [routerLink]="'/serieTv'">SERIE TV</a>
+                            <a href="#" class="dropdown-item" [routerLink]="'/americanDreams'">AMERICAN DREAMS</a>
+                        </div>
+                    </li>
+                    <button type="button" id="btnSubscribe" [routerLink]="'/subscribe'">ABONNEMENT</button>
                 </ul>
             </div>
         </div>
@@ -52,14 +51,13 @@
                 </li>
                 <li class="nav-item"><a href="#" class="nav-link">PERSONNAGES</a></li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#goodies">GOODIES</a>
-                    <div class="dropdown-menu" id="goodies">
-                        <a href="#" class="dropdown-item">FIGURINES</a>
-                        <a href="#" class="dropdown-item">VETEMENTS</a>
-                        <a href="#" class="dropdown-item">ACCESSOIRES</a>
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#media">MEDIA</a>
+                    <div class="dropdown-menu" id="media">
+                        <a href="#" class="dropdown-item" [routerLink]="'/serieTv'">SERIE TV</a>
+                        <a href="#" class="dropdown-item" [routerLink]="'/americanDreams'">AMERICAN DREAMS</a>
                     </div>
                 </li>
-                <button type="button" id="btnSuscribe" [routerLink]="'/suscribe'">ABONNEMENT</button>
+                <button type="button" id="btnSubscribe" [routerLink]="'/subscribe'">ABONNEMENT</button>
                 </ul>
             </div>
         </div>
