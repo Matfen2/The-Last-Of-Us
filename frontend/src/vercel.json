@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "angular.json", 
+      "use": "@now/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ]
+}
