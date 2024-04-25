@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: headliner;
+  src: url("/assets/fonts/Headliner.ttf");
+}
+@font-face {
+  font-family: daysLater;
+  src: url("/assets/fonts/28DaysLater.ttf");
+}
+#container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/theLastOfUsLuciol.jpg");
+}
+#container .d-flex {
+  top: 50%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+#container .d-flex #logo {
+  margin: auto;
+  height: 150px;
+  max-width: 650px;
+}
+#container .d-flex #btnShowGames {
+  display: block;
+  padding: 10px;
+  margin: 20px auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: azure;
+  letter-spacing: 3px;
+  border-radius: 8px;
+  font-family: daysLater;
+  background: transparent;
+  border: 2px solid azure;
+  transition: all 0.2s ease;
+}
+#container .d-flex #btnShowGames:hover {
+  color: black;
+  background: azure;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 9px 5px #FFFFFF;
+}
+#container .infoGame {
+  padding: 40px;
+  margin-top: -10px;
+  visibility: hidden;
+}
+#container .infoGame .row .col-lg-7 #pictPresent {
+  height: 560px;
+}
+#container .infoGame .row .col-lg-7 .listPict .row {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+#container .infoGame .row .col-lg-7 .listPict .row .col-lg-3 .img-fluid {
+  width: 300px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+#container .infoGame .row .col-lg-7 .listPict .row .col-lg-3 .img-fluid:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 9px 5px azure;
+}
+#container .infoGame .row .col-lg-5 {
+  height: 400px;
+  padding: 10px;
+  margin-top: 120px;
+  border-radius: 10px;
+  border: 2px solid azure;
+  background-color: rgba(56, 56, 56, 0.7);
+}
+#container .infoGame .row .col-lg-5 .story {
+  line-height: 50px;
+  font-size: 2.2em;
+  color: azure;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: headliner;
+  text-shadow: 2px 2px 0px #000000, 5px 4px 0px rgba(0, 0, 0, 0.15), 2px 2px 2px rgba(206, 89, 55, 0), 2px 2px 2px rgba(0, 0, 0, 0);
+}
+#container .infoGame .row .col-lg-5 .listBtnInfo {
+  text-align: center;
+}
+#container .infoGame .row .col-lg-5 .listBtnInfo #btnInfo {
+  font-size: 1.5em;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: transparent;
+  transition: all 0.2ms ease;
+  border: 2px solid azure;
+}
+#container .infoGame .row .col-lg-5 .listBtnInfo #btnInfo #site {
+  font-weight: bold;
+  color: azure;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: daysLater;
+  text-shadow: 2px 2px 0px black, 5px 4px 0px rgba(0, 0, 0, 0.15), 2px 2px 2px rgba(206, 89, 55, 0), 2px 2px 2px black, 2px 2px 2px black;
+}
+#container .infoGame .row .col-lg-5 .listBtnInfo #btnInfo:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 1px 9px 5px azure;
+}
+#container .infoGame .row .col-lg-5 .listBtnInfo #btnBuy {
+  margin-left: 10px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  background: transparent;
+  transition: all 0.2ms ease;
+  border: 2px solid azure;
+}
+#container .infoGame .row .col-lg-5 .listBtnInfo #btnBuy #buy {
+  font-weight: bold;
+  color: azure;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: daysLater;
+  text-shadow: 2px 2px 0px #000000, 5px 4px 0px rgba(0, 0, 0, 0.15), 2px 2px 2px rgba(206, 89, 55, 0), 2px 2px 2px black, 2px 2px 2px black;
+}
+#container .infoGame .row .col-lg-5 .listBtnInfo #btnBuy:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 1px 9px 5px azure;
+}
+#container .containGame .listGames {
+  top: 50%;
+  left: 50%;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-direction: row;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#container .containGame .listGames img {
+  height: 250px;
+  width: 100%;
+  opacity: 0.7;
+  cursor: pointer;
+  max-width: 400px;
+  border-radius: 5px;
+}
+#container .containGame .listGames img:hover {
+  opacity: 1;
+}
+#container .containGame .positionListGames {
+  top: 90%;
+  padding-bottom: -150px;
+  position: absolute;
+}
+#container .containGame .positionListGames .size {
+  height: 150px;
+}
+
+@media screen and (max-width: 1440px) {
+  #container .infoGame .row .col-lg-7 #pictPresent {
+    height: 680px;
+  }
+  #container .infoGame .row .col-lg-5 {
+    margin-top: 140px;
+    height: 490px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #container .infoGame {
+    display: block;
+    margin: auto;
+  }
+  #container .infoGame .row .col-lg-7 #pictPresent {
+    height: 535px;
+  }
+  #container .infoGame .row .col-lg-5 {
+    overflow: auto;
+    margin-top: 30px;
+    height: 480px;
+  }
+  #container .containGame .listGames {
+    top: 88%;
+    left: 48%;
+  }
+  #container .containGame .listGames img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container {
+    height: 155vh;
+  }
+  #container .d-flex {
+    top: 35%;
+  }
+  #container .infoGame {
+    display: block;
+    margin: auto;
+  }
+  #container .infoGame .row .col-lg-7 #pictPresent {
+    height: 535px;
+  }
+  #container .infoGame .row .col-lg-7 .listPict .row .col-lg-3 .img-fluid {
+    height: 100px;
+  }
+  #container .infoGame .row .col-lg-5 {
+    overflow: auto;
+    margin-top: 30px;
+    height: 405px;
+  }
+  #container .containGame .listGames {
+    top: 53%;
+    left: 43%;
+  }
+  #container .containGame .listGames img {
+    height: 150px;
+  }
+  #container .containGame .positionListGames {
+    top: 142%;
+    padding-bottom: -150px;
+    position: absolute;
+  }
+  #container .containGame .positionListGames .size {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #container .d-flex {
+    top: 35%;
+  }
+  #container .d-flex #logo {
+    max-width: 378px;
+  }
+  #container .infoGame {
+    display: block;
+    margin: auto;
+  }
+  #container .infoGame .row .col-lg-7 #pictPresent {
+    height: 435px;
+    width: 700px;
+  }
+  #container .infoGame .row .col-lg-7 .listPict .row .col-lg-3 .img-fluid {
+    height: 60px;
+  }
+  #container .infoGame .row .col-lg-5 {
+    overflow: auto;
+    margin-top: 30px;
+    height: 275px;
+  }
+  #container .containGame .listGames {
+    top: 53%;
+    left: 50%;
+    flex-direction: column;
+  }
+  #container .containGame .listGames img {
+    margin: 10px 0px 10px 0px;
+    height: 250px;
+    width: 350px;
+  }
+  #container .containGame .positionListGames {
+    top: 137%;
+    padding-bottom: -150px;
+    position: absolute;
+  }
+  #container .containGame .positionListGames .size {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #container .d-flex #logo {
+    max-width: 338px;
+  }
+  #container .infoGame .row .col-lg-5 .listBtnInfo #btnBuy {
+    margin-top: 10px;
+    margin-right: 18px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #container .d-flex #logo {
+    max-width: 288px;
+  }
+  #container .containGame .listGames {
+    top: 53%;
+    left: 50%;
+    flex-direction: column;
+  }
+  #container .containGame .listGames img {
+    margin: 10px 0px 10px 0px;
+    height: 250px;
+    width: 250px;
+  }
+  #container .containGame .positionListGames {
+    top: 137%;
+    padding-bottom: -150px;
+    position: absolute;
+  }
+  #container .containGame .positionListGames .size {
+    height: 120px;
+  }
+}/*# sourceMappingURL=style.css.map */

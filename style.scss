@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    display: block;
+}
+
+// MIXIN & ROOT
+$firstColor: azure;
+$secondColor: black;
+
+$firstFont: headliner;
+$secondFont: daysLater;
+
+@font-face {
+    font-family: $firstFont;
+    src: url('/assets/fonts/Headliner.ttf');
+}
+
+@font-face {
+    font-family: $secondFont;
+    src: url('/assets/fonts/28DaysLater.ttf');
+}
+
+#container {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/picts/theLastOfUsLuciol.jpg');
+    .d-flex {
+        top: 50%;
+        left: 50%;
+        position: relative;
+        transform: translate(-50%, -50%);
+      #logo {
+        margin: auto;
+        height: 150px;
+        max-width: 650px;
+      }
+      #btnShowGames {
+        display: block;
+        padding: 10px;
+        margin: 20px auto;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: $firstColor;
+        letter-spacing: 3px;
+        border-radius: 8px;
+        font-family: $secondFont;
+        background: transparent;
+        border: 2px solid $firstColor;
+        transition: all 0.20s ease;
+        &:hover {
+            color: $secondColor;
+            background: $firstColor;
+            transform: scale(1.1);
+            box-shadow: 0px 1px 9px 5px #FFFFFF;
+        }
+      }
+    }
+    .infoGame {
+        padding: 40px;
+        margin-top: -10px;
+        visibility: hidden;
+        .row {
+            .col-lg-7 {
+                #pictPresent {
+                    height: 560px;
+                }
+                .listPict {
+                    .row {
+                        margin: auto;
+                        text-align: center;
+                        justify-content: center;
+                        .col-lg-3 {
+                            .img-fluid {
+                                width: 300px;
+                                opacity: 0.7;
+                                cursor: pointer;
+                                &:hover {
+                                    opacity: 1.0;
+                                    transform: scale(1.1);
+                                    box-shadow: 0px 1px 9px 5px $firstColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col-lg-5 {
+                height: 400px;
+                padding: 10px;
+                margin-top: 120px;
+                border-radius: 10px;
+                border: 2px solid $firstColor;
+                background-color: rgba(56, 56, 56, 0.7);
+                .story {
+                    line-height: 50px;
+                    font-size: 2.2em;
+                    color: $firstColor;
+                    text-align: center;
+                    letter-spacing: 2px;
+                    font-family: $firstFont;
+                    text-shadow: 2px 2px 0px #000000, 5px 4px 0px rgba(0,0,0,0.15), 2px 2px 2px rgba(206,89,55,0), 2px 2px 2px rgba(0,0,0,0);
+                }
+                .listBtnInfo {
+                    text-align: center;
+                    #btnInfo {
+                        font-size: 1.5em;
+                        margin-right: 10px;
+                        border-radius: 5px;
+                        background: transparent;
+                        transition: all 0.20ms ease;
+                        border: 2px solid $firstColor;
+                        #site {
+                            font-weight: bold;
+                            color: $firstColor;
+                            letter-spacing: 2px;
+                            text-decoration: none;
+                            font-family: $secondFont;
+                            text-shadow: 2px 2px 0px $secondColor, 5px 4px 0px rgba(0,0,0,0.15), 2px 2px 2px rgba(206,89,55,0), 2px 2px 2px $secondColor, 2px 2px 2px $secondColor;    
+                        }
+                        &:hover {
+                            transform: scale(1.1);
+                            box-shadow: 0px 1px 9px 5px $firstColor;
+                        }
+                    }
+                    #btnBuy {
+                        margin-left: 10px;
+                        font-size: 1.5em;
+                        border-radius: 5px;
+                        background: transparent;
+                        transition: all 0.20ms ease;
+                        border: 2px solid $firstColor;
+                        #buy {
+                            font-weight: bold;
+                            color: $firstColor;
+                            letter-spacing: 2px;
+                            text-decoration: none;
+                            font-family: $secondFont;
+                            text-shadow: 2px 2px 0px #000000, 5px 4px 0px rgba(0,0,0,0.15), 2px 2px 2px rgba(206,89,55,0), 2px 2px 2px $secondColor, 2px 2px 2px $secondColor;
+                        }
+                        &:hover {
+                            transform: scale(1.1);
+                            box-shadow: 0px 1px 9px 5px $firstColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .containGame {
+        .listGames {
+            top: 50%;
+            left: 50%;
+            display: flex;
+            column-gap: 20px;
+            flex-direction: row;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            img {
+                height: 250px;
+                width: 100%;
+                opacity: 0.7;
+                cursor: pointer;
+                max-width: 400px;
+                border-radius: 5px;
+                &:hover {
+                    opacity: 1.0;
+                }
+            }
+        }
+        .positionListGames {
+            top: 90%;
+            padding-bottom: -150px;
+            position: absolute;
+            .size {
+                height: 150px;
+            }
+        }
+    }
+}
+
+// RESPONSIVE 
+@media screen and (max-width: 1440px) {
+    #container {
+        .infoGame {
+            .row {
+                .col-lg-7 {
+                    #pictPresent {
+                        height: 680px;
+                    }
+                }
+                .col-lg-5 {
+                    margin-top: 140px;
+                    height: 490px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #container {
+        .infoGame {
+            display: block;
+                margin: auto;
+            .row {
+                .col-lg-7 {
+                    #pictPresent {
+                        height: 535px;
+                    }
+                }
+                .col-lg-5 {
+                    overflow: auto;
+                    margin-top: 30px;
+                    height: 480px;
+                }
+            }
+        }
+        .containGame {
+            .listGames {
+                top: 88%;
+                left: 48%;
+                img {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        height: 155vh;
+        .d-flex {
+            top: 35%;
+        }
+        .infoGame {
+            display: block;
+                margin: auto;
+            .row {
+                .col-lg-7 {
+                    #pictPresent {
+                        height: 535px;
+                    }
+                    .listPict {
+                        .row {
+                            .col-lg-3 {
+                                .img-fluid {
+                                    height: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .col-lg-5 {
+                    overflow: auto;
+                    margin-top: 30px;
+                    height: 405px;
+                }
+            }
+        }
+        .containGame {
+            .listGames {
+                top: 53%;
+                left: 43%;
+                img {
+                    height: 150px;
+                }
+            }
+            .positionListGames {
+                top: 142%;
+                padding-bottom: -150px;
+                position: absolute;
+                .size {
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #container {
+        .d-flex {
+            top: 35%;
+            #logo {
+                max-width: 378px;
+            }
+        }
+        .infoGame {
+            display: block;
+                margin: auto;
+            .row {
+                .col-lg-7 {
+                    #pictPresent {
+                        height: 435px;
+                        width: 700px;
+                    }
+                    .listPict {
+                        .row {
+                            .col-lg-3 {
+                                .img-fluid {
+                                    height: 60px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .col-lg-5 {
+                    overflow: auto;
+                    margin-top: 30px;
+                    height: 275px;
+                }
+            }
+        }
+        .containGame {
+            .listGames {
+                top: 53%;
+                left: 50%;
+                flex-direction: column;
+                img {
+                    margin: 10px 0px 10px 0px;
+                    height: 250px;
+                    width: 350px;
+                }
+            }
+            .positionListGames {
+                top: 137%;
+                padding-bottom: -150px;
+                position: absolute;
+                .size {
+                    height: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #container {
+        .d-flex {
+            #logo {
+                max-width: 338px;
+            }
+        }
+        .infoGame {
+            .row {
+                .col-lg-5 {
+                    .listBtnInfo {
+                        #btnBuy {
+                            margin-top: 10px;
+                            margin-right: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    #container {
+        .d-flex {
+            #logo {
+                max-width: 288px;
+            }
+        }
+        .containGame {
+            .listGames {
+                top: 53%;
+                left: 50%;
+                flex-direction: column;
+                img {
+                    margin: 10px 0px 10px 0px;
+                    height: 250px;
+                    width: 250px;
+                }
+            }
+            .positionListGames {
+                top: 137%;
+                padding-bottom: -150px;
+                position: absolute;
+                .size {
+                    height: 120px;
+                }
+            }
+        }
+    }
+}
